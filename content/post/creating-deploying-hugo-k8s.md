@@ -177,14 +177,18 @@ ENV HUGO_VERSION=0.79.0
 COPY ./ /site/
 # install hugo
 ADD https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz /tmp/
+# change workdir for npm
+WORKDIR /site/themes/Blonde
 RUN tar -xf /tmp/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz -C /usr/local/bin/ && \
     chmod +x /usr/local/bin/hugo && \
     # install npm
     apk add --update npm && \
     # install npm packages
-    npm install -g postcss && \
-    npm install -g postcss-cli && \
-    npm install -g autoprefixer && \
+    npm install -g postcss-cli@8.3.1 && \
+    npm install -g postcss@8.1.0 && \
+    npm install -g autoprefixer@10.2.1 && \
+    npm install -g postcss-import@14.0.0 && \
+    npm i -D @fullhuman/postcss-purgecss postcss && \
     # install hugo theme with npm
     npm install /site/themes/Blonde && \
     # generate site
@@ -246,3 +250,165 @@ Sweet, now we have a Hugo site containerized!
 
 #### Initialize the Helm chart
 
+This will cover creating a chart, but not hosting the chart. For hosting the chart check out my other post about hosting charts on Github pages for free.
+
+##### Making the Chart
+
+Create a new working directory to house your helm chart. This should be separate from the git repo created for the site. Once you're in the directory, just simply run:
+
+```bash
+helm create myawesomeblog
+ls myawesomeblog
+Chart.yaml   templates/   values.yaml
+```
+
+From there, you'll want to edit the file `values.yml` to line up with your Docker image:
+
+```
+...
+image:
+  repository: crutonjohn/myawesomeblog
+  pullPolicy: IfNotPresent
+...
+```
+
+To test your newly created Helm chart you can run the following, providing a positional name argument `test`. This will output 
+
+```bash
+helm template test ./
+---
+# Source: baremetalblog/templates/serviceaccount.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: test-baremetalblog
+  labels:
+
+    helm.sh/chart: baremetalblog-0.1.0
+    app.kubernetes.io/name: baremetalblog
+    app.kubernetes.io/instance: test
+    app.kubernetes.io/version: "0.1.0"
+    app.kubernetes.io/managed-by: Helm
+---
+# Source: baremetalblog/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: test-baremetalblog
+  labels:
+    helm.sh/chart: baremetalblog-0.1.0
+    app.kubernetes.io/name: baremetalblog
+    app.kubernetes.io/instance: test
+    app.kubernetes.io/version: "0.1.0"
+    app.kubernetes.io/managed-by: Helm
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app.kubernetes.io/name: baremetalblog
+    app.kubernetes.io/instance: test
+---
+# Source: baremetalblog/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-baremetalblog
+  labels:
+    helm.sh/chart: baremetalblog-0.1.0
+    app.kubernetes.io/name: baremetalblog
+    app.kubernetes.io/instance: test
+    app.kubernetes.io/version: "0.1.0"
+    app.kubernetes.io/managed-by: Helm
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: baremetalblog
+      app.kubernetes.io/instance: test
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: baremetalblog
+        app.kubernetes.io/instance: test
+    spec:
+      serviceAccountName: test-baremetalblog
+      securityContext:
+        {}
+      containers:
+        - name: baremetalblog
+          securityContext:
+            {}
+          image: "crutonjohn/baremetalblog:0.1.0"
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 80
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /
+              port: http
+          readinessProbe:
+            httpGet:
+              path: /
+              port: http
+          resources:
+            {}
+---
+# Source: baremetalblog/templates/ingress.yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: test-baremetalblog
+  labels:
+    helm.sh/chart: baremetalblog-0.1.0
+    app.kubernetes.io/name: baremetalblog
+    app.kubernetes.io/instance: test
+    app.kubernetes.io/version: "0.1.0"
+    app.kubernetes.io/managed-by: Helm
+spec:
+  rules:
+    - host: "chart-example.local"
+      http:
+        paths:
+---
+# Source: baremetalblog/templates/tests/test-connection.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "test-baremetalblog-test-connection"
+  labels:
+
+    helm.sh/chart: baremetalblog-0.1.0
+    app.kubernetes.io/name: baremetalblog
+    app.kubernetes.io/instance: test
+    app.kubernetes.io/version: "0.1.0"
+    app.kubernetes.io/managed-by: Helm
+  annotations:
+    "helm.sh/hook": test-success
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args:  ['test-baremetalblog:80']
+  restartPolicy: Never
+```
+
+#### Deploy Blog Using Helm
+
+Assuming you have pushed the blog/site image to an image registry, we can now deploy our application to our cluster in the current working namespace by doing the following. (Be sure to update your `values.yml` to align with what you want deployed)
+
+```bash
+helm install myblog ./ -f values.yml
+```
+
+Your blog should now be accessible in your cluster!
+
+# Conclusion
+
+This may not be the best practice or even the easiest way to deploy a Hugo static site, but it is the way that worked for me. If you run into any troubles feel free to join the [k8s@home Discord](https://discord.gg/RGvKzVg) and give me a shout!
