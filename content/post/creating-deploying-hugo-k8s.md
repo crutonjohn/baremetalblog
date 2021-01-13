@@ -2,7 +2,7 @@
 author: "Curtis John"
 title: "Create and Deploy Hugo to Kubernetes"
 image: "img/posts/creating-deploying-hugo.png"
-draft: true
+draft: false
 date: 2021-01-09
 description: "Deploy Hugo Site Using Helm"
 tags: ["hugo", "k8s", "helm"]
