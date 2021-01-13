@@ -1,10 +1,10 @@
 FROM alpine:latest as MEATGRINDER
 # generate hugo site
-WORKDIR /site
 ENV HUGO_VERSION=0.79.0
 COPY ./ /site/
 # install hugo
 ADD https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz /tmp/
+WORKDIR /site/themes/Blonde
 RUN tar -xf /tmp/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz -C /usr/local/bin/ && \
     chmod +x /usr/local/bin/hugo && \
     # install npm
