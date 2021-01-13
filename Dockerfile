@@ -9,9 +9,10 @@ RUN tar -xf /tmp/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz -C /usr/local/bin/ && \
     # install npm
     apk add --update npm && \
     # install npm packages
-    npm install -g postcss-cli && \
-    npm install -g autoprefixer && \
-    npm install -g postcss-import && \
+    npm install -g postcss-cli@8.3.1 && \
+    npm install -g postcss@8.1.0 && \
+    npm install -g autoprefixer@10.2.1 && \
+    npm install -g postcss-import@14.0.0 && \
     npm i -D @fullhuman/postcss-purgecss postcss && \
     # install hugo theme with npm
     npm install /site/themes/Blonde && \
