@@ -9,7 +9,6 @@ RUN tar -xf /tmp/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz -C /usr/local/bin/ && \
     # install npm
     apk add --update npm && \
     # install npm packages
-    npm install -g postcss && \
     npm install -g postcss-cli && \
     npm install -g autoprefixer && \
     npm install -g postcss-import && \
