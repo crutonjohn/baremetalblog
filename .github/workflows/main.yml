@@ -25,7 +25,7 @@ jobs:
       - uses: cachix/install-nix-action@v22
         with:
           nix_path: nixpkgs=channel:nixos-unstable
-        extra_nix_config: |
+          extra_nix_config: |
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
       - name: Update Sources
         run: nix develop --ignore-environment --command bash -c 'niv update'
@@ -52,7 +52,7 @@ jobs:
       - uses: cachix/install-nix-action@v22
         with:
           nix_path: nixpkgs=channel:nixos-unstable
-        extra_nix_config: |
+          extra_nix_config: |
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
       - run: nix develop --ignore-environment --command bash -c 'niv update'
       - run: nix develop --ignore-environment --command bash -c 'node2nix -18 -i ./package.json -o ./nix/pkgs/baremetalblog/node-packages.nix -c ./nix/pkgs/baremetalblog/default.nix -e ./nix/pkgs/baremetalblog/node-env.nix'
@@ -70,7 +70,7 @@ jobs:
       - uses: cachix/install-nix-action@v22
         with:
           nix_path: nixpkgs=channel:nixos-unstable
-        extra_nix_config: |
+          extra_nix_config: |
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
       - run: nix develop --ignore-environment --command bash -c 'niv update'
       - name: Build dependencies and site
@@ -90,7 +90,7 @@ jobs:
       - uses: cachix/install-nix-action@v22
         with:
           nix_path: nixpkgs=channel:nixos-unstable
-        extra_nix_config: |
+          extra_nix_config: |
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
       - run: nix develop --ignore-environment --command bash -c 'niv update'
       - name: Check build output
