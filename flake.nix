@@ -17,9 +17,9 @@
       in {
         packages.x86_64-linux.${packageName} = pkgs.callPackage ./nix/pkgs/baremetalblog { };
 
-        nixosModules.baremetalblog = import ./nix/modules/baremetalblog self;
+        nixosModules.baremetalblog = import ./nix/modules/baremetalblog/hugo.nix self;
 
-        defaultPackage = self.packages.${system}.${packageName};
+        # defaultPackage = self.packages.${system}.${packageName};
 
         devShell = pkgs.mkShell {
           buildInputs = with pkgs; [
