@@ -26,7 +26,7 @@ jobs:
         with:
           nix_path: nixpkgs=channel:nixos-unstable
       - name: Update Sources
-        run: nix develop --command bash -c 'niv update'
+        run: nix develop --ignore-environment --command bash -c 'niv update'
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Bump sources.nix
@@ -50,8 +50,8 @@ jobs:
       - uses: cachix/install-nix-action@v20
         with:
           nix_path: nixpkgs=channel:nixos-unstable
-      - run: nix develop --command bash -c 'niv update'
-      - run: nix develop --command bash -c 'node2nix -18 -i ./package.json -o ./nix/pkgs/baremetalblog/node-packages.nix -c ./nix/pkgs/baremetalblog/default.nix -e ./nix/pkgs/baremetalblog/node-env.nix'
+      - run: nix develop --ignore-environment --command bash -c 'niv update'
+      - run: nix develop --ignore-environment --command bash -c 'node2nix -18 -i ./package.json -o ./nix/pkgs/baremetalblog/node-packages.nix -c ./nix/pkgs/baremetalblog/default.nix -e ./nix/pkgs/baremetalblog/node-env.nix'
 
   nix-test-derivation:
     runs-on: ubuntu-22.04
@@ -66,7 +66,7 @@ jobs:
       - uses: cachix/install-nix-action@v20
         with:
           nix_path: nixpkgs=channel:nixos-unstable
-      - run: nix develop --command bash -c 'niv update'
+      - run: nix develop --ignore-environment --command bash -c 'niv update'
       - name: Build dependencies and site
         run: nix-build nix/pkgs/baremetalblog/hugo.nix
 
@@ -84,7 +84,7 @@ jobs:
       - uses: cachix/install-nix-action@v20
         with:
           nix_path: nixpkgs=channel:nixos-unstable
-      - run: nix develop --command bash -c 'niv update'
+      - run: nix develop --ignore-environment --command bash -c 'niv update'
       - name: Check build output
         run: nix build
       - name: Check flake output
