@@ -16,7 +16,7 @@ concurrency:
 
 jobs:
   bump-sources:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
         with:
@@ -39,7 +39,7 @@ jobs:
           skip_fetch: true
 
   bump-npm:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-20.04
     needs:
       - bump-sources
     steps:
@@ -54,7 +54,7 @@ jobs:
       - run: nix develop --ignore-environment --command bash -c 'node2nix -18 -i ./package.json -o ./nix/pkgs/baremetalblog/node-packages.nix -c ./nix/pkgs/baremetalblog/default.nix -e ./nix/pkgs/baremetalblog/node-env.nix'
 
   nix-test-derivation:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-20.04
     needs: 
       - bump-sources
       - bump-npm
@@ -71,7 +71,7 @@ jobs:
         run: nix-build nix/pkgs/baremetalblog/hugo.nix
 
   nix-test-flake:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-20.04
     needs: 
       - nix-test-derivation
       - bump-sources
