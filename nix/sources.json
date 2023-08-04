@@ -1,6 +1,6 @@
 {
     "baremetalblog": {
-        "branch": "refactor/nixos",
+        "branch": "main",
         "repo": "git@github.com:crutonjohn/baremetalblog",
         "rev": "d73c3b73049834a0d854427412b11b46546f331c",
         "submodules": true,

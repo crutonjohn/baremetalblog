@@ -25,9 +25,13 @@
 
         devShell = pkgs.mkShell {
           buildInputs = with pkgs; [
+            nixfmt
+            nix-index
             hugo
-            git
             niv
+            nodejs_18
+            node2nix
+            act
           ];
           inputsFrom = builtins.attrValues self.packages.${system};
         };

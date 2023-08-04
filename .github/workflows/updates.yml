@@ -1,0 +1,54 @@
+---
+name: "NPM and Sources Updates"
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 * * * *"
+
+jobs: 
+  bump-sources:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+        with:
+            submodules: true
+            fetch-depth: 0
+      - uses: cachix/install-nix-action@v20
+        with:
+          nix_path: nixpkgs=channel:nixos-unstable
+      - name: Update Sources
+        run: nix develop --command bash -c 'niv update'
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Bump sources.nix
+          branch: main
+          commit_options: '--no-verify --signoff'
+          file_pattern: 'nix/sources.*'
+          commit_user_name: Nix Bot
+          commit_author: Nix Bot <actions@github.com>
+          skip_dirty_check: false
+          skip_fetch: true
+
+  bump-npm:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+        with:
+            submodules: true
+            fetch-depth: 0
+      - uses: cachix/install-nix-action@v20
+        with:
+          nix_path: nixpkgs=channel:nixos-unstable
+      - run: nix develop --command bash -c 'niv update'
+      - run: nix develop --command bash -c 'node2nix -18 -i ./package.json -o ./nix/pkgs/baremetalblog/node-packages.nix -c ./nix/pkgs/baremetalblog/default.nix -e ./nix/pkgs/baremetalblog/node-env.nix'
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Bump NPM deps
+          branch: main
+          commit_options: '--no-verify --signoff'
+          file_pattern: 'nix/pkgs/baremetalblog/*.nix'
+          commit_user_name: Nix Bot
+          commit_author: Nix Bot <actions@github.com>
+          skip_dirty_check: false
+          skip_fetch: true
