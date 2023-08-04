@@ -25,6 +25,7 @@
 
         devShell = pkgs.mkShell {
           buildInputs = with pkgs; [
+            git
             nixfmt
             nix-index
             hugo
