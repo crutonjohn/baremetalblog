@@ -1,0 +1,33 @@
+{
+    "baremetalblog": {
+        "branch": "main",
+        "repo": "git@github.com:crutonjohn/baremetalblog",
+        "rev": "cb81601273360e49e20eb4a75b06c885937e4c95",
+        "submodules": true,
+        "type": "git"
+    },
+    "blonde": {
+        "branch": "master",
+        "description": "Blonde, A simple theme using Tailwind CSS.",
+        "homepage": "https://blonde.pages.dev",
+        "owner": "opera7133",
+        "repo": "Blonde",
+        "rev": "c8c1489c5e2cb1781033662885f128bd3ddd9f29",
+        "sha256": "0mmfzqf37hw5szk8a9a9c340c2azf7dm77yslk44rnf4gz9zhsyg",
+        "type": "tarball",
+        "url": "https://github.com/opera7133/Blonde/archive/c8c1489c5e2cb1781033662885f128bd3ddd9f29.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "nixpkgs": {
+        "branch": "nixos-unstable",
+        "description": "Nix Packages collection",
+        "homepage": null,
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "66aedfd010204949cb225cf749be08cb13ce1813",
+        "sha256": "1jspq3g1wzdfgmnp4wzzrwh2cfn9q2w86b25bgwr7ygdcdap3fqd",
+        "type": "tarball",
+        "url": "https://github.com/NixOS/nixpkgs/archive/66aedfd010204949cb225cf749be08cb13ce1813.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    }
+}
