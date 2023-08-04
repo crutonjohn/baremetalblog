@@ -2,7 +2,7 @@
     "baremetalblog": {
         "branch": "main",
         "repo": "git@github.com:crutonjohn/baremetalblog",
-        "rev": "cb81601273360e49e20eb4a75b06c885937e4c95",
+        "rev": "bcfe6200dfb66b33fb399f4dea757bbd61f30a5b",
         "submodules": true,
         "type": "git"
     },
