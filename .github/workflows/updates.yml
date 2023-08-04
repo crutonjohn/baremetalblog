@@ -20,7 +20,7 @@ jobs:
             fetch-depth: 0
       - uses: cachix/install-nix-action@v22
         with:
-          nix_path: nixpkgs=channel:nixos-unstable
+          nix_path: nixos-unstable=channel:nixos-unstable:nixpkgs=channel:nixos-unstable
           github_access_token: ${{ secrets.GITHUB_TOKEN }}
       - name: Print nixpkgs version
         run: nix-instantiate --eval -E '(import <nixpkgs> {}).lib.version'
@@ -50,7 +50,7 @@ jobs:
             fetch-depth: 0
       - uses: cachix/install-nix-action@v22
         with:
-          nix_path: nixpkgs=channel:nixos-unstable
+          nix_path: nixos-unstable=channel:nixos-unstable:nixpkgs=channel:nixos-unstable
           github_access_token: ${{ secrets.GITHUB_TOKEN }}
       - run: nix build
       - run: nix develop --ignore-environment --command bash -c 'niv update'
