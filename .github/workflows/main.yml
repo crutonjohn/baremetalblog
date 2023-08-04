@@ -25,8 +25,10 @@ jobs:
       - uses: cachix/install-nix-action@v22
         with:
           nix_path: nixpkgs=channel:nixos-unstable
+        extra_nix_config: |
+            access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
       - name: Update Sources
-        run: nix-shell --run 'niv update'
+        run: nix develop --ignore-environment --command bash -c 'niv update'
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Bump sources.nix
@@ -50,8 +52,10 @@ jobs:
       - uses: cachix/install-nix-action@v22
         with:
           nix_path: nixpkgs=channel:nixos-unstable
-      - run: nix-shell --run 'niv update'
-      - run: nix-shell --run 'node2nix -18 -i ./package.json -o ./nix/pkgs/baremetalblog/node-packages.nix -c ./nix/pkgs/baremetalblog/default.nix -e ./nix/pkgs/baremetalblog/node-env.nix'
+        extra_nix_config: |
+            access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
+      - run: nix develop --ignore-environment --command bash -c 'niv update'
+      - run: nix develop --ignore-environment --command bash -c 'node2nix -18 -i ./package.json -o ./nix/pkgs/baremetalblog/node-packages.nix -c ./nix/pkgs/baremetalblog/default.nix -e ./nix/pkgs/baremetalblog/node-env.nix'
 
   nix-test-derivation:
     runs-on: ubuntu-20.04
@@ -66,7 +70,9 @@ jobs:
       - uses: cachix/install-nix-action@v22
         with:
           nix_path: nixpkgs=channel:nixos-unstable
-      - run: nix-shell --run 'niv update'
+        extra_nix_config: |
+            access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
+      - run: nix develop --ignore-environment --command bash -c 'niv update'
       - name: Build dependencies and site
         run: nix-build nix/pkgs/baremetalblog/hugo.nix
 
@@ -84,7 +90,9 @@ jobs:
       - uses: cachix/install-nix-action@v22
         with:
           nix_path: nixpkgs=channel:nixos-unstable
-      - run: nix-shell --run 'niv update'
+        extra_nix_config: |
+            access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
+      - run: nix develop --ignore-environment --command bash -c 'niv update'
       - name: Check build output
         run: nix build
       - name: Check flake output
