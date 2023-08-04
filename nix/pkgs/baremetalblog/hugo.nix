@@ -18,6 +18,8 @@ pkgs.stdenv.mkDerivation {
     ln -s ${nodeDependencies}/lib/node_modules ./node_modules
     export PATH="${nodeDependencies}/bin:$PATH"
 
+    ls -al
+
     mkdir -p $out
 
     npm run build
