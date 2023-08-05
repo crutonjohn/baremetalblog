@@ -23,7 +23,7 @@
           baremetalblog = import ./nix/modules/baremetalblog self;
         };
 
-        devShell = pkgs.mkShell {
+        devShells.default = pkgs.mkShell {
           buildInputs = with pkgs; [
             git
             nixfmt
