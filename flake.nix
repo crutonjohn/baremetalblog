@@ -15,12 +15,12 @@
       in
       {
         packages = rec {
-          baremetalblog = pkgs.callPackage ./nix/pkgs/baremetalblog/hugo.nix { };
+          baremetalblog = pkgs.callPackage ./nix/pkgs/baremetalblog { };
           default = baremetalblog;
         };
 
         nixosModules = rec {
-          baremetalblog = import ./nix/modules/baremetalblog/hugo.nix self;
+          baremetalblog = import ./nix/modules/baremetalblog self;
         };
 
         devShell = pkgs.mkShell {
@@ -29,7 +29,6 @@
             nixfmt
             nix-index
             hugo
-            niv
             nodejs_18
             node2nix
             act
