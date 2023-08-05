@@ -30,7 +30,7 @@ jobs:
         with:
           nix_path: nixos-unstable=channel:nixos-unstable:nixpkgs=channel:nixos-unstable
           github_access_token: ${{ secrets.GITHUB_TOKEN }}
-      - run: nix develop --command bash -c 'node2nix -18 -i ./package.json -o ./nix/pkgs/baremetalblog/node-packages.nix -c ./nix/pkgs/baremetalblog/default.nix -e ./nix/pkgs/baremetalblog/node-env.nix'
+      - run: nix develop --command bash -c 'node2nix -18 -i ./package.json -o ./nix/pkgs/baremetalblog/node-packages.nix -c ./nix/pkgs/baremetalblog/node.nix -e ./nix/pkgs/baremetalblog/node-env.nix'
 
   nix-test-derivation:
     runs-on: ubuntu-20.04
