@@ -7,7 +7,6 @@ pkgs.mkShell {
     nix-index
     hugo
     colmena
-    niv
     nodejs_18
     node2nix
   ];
