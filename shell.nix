@@ -9,5 +9,6 @@ pkgs.mkShell {
     colmena
     nodejs_18
     node2nix
+    niv
   ];
 }
