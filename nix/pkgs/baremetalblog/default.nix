@@ -12,19 +12,16 @@ in
 
 pkgs.stdenv.mkDerivation {
   name = "baremetalblog";
-  srcs = [
-    ../../..
-    blonde_src
-  ];
+  src = ../../..;
   nativeBuildInputs = [nodejs pkgs.hugo];
-  sourceRoot = "";
+  configurePhase = ''
+    cp -r ${blonde_src} themes/Blonde
+  '';
   buildPhase = ''
     ln -s ${nodeDependencies}/lib/node_modules ./node_modules
     export PATH="${nodeDependencies}/bin:$PATH"
 
     mkdir -p $out
-
-    ls -al ./
 
     hugo --minify -t Blonde
 

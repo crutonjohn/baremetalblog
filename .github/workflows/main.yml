@@ -46,7 +46,7 @@ jobs:
           nix_path: nixos-unstable=channel:nixos-unstable:nixpkgs=channel:nixos-unstable
           github_access_token: ${{ secrets.GITHUB_TOKEN }}
       - name: Build dependencies and site
-        run: nix-build nix/pkgs/baremetalblog
+        run: nix build
 
   nix-test-flake:
     runs-on: ubuntu-20.04
