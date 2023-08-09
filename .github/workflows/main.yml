@@ -45,22 +45,7 @@ jobs:
         with:
           nix_path: nixos-unstable=channel:nixos-unstable:nixpkgs=channel:nixos-unstable
           github_access_token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Build dependencies and site
-        run: nix build
-
-  nix-test-flake:
-    runs-on: ubuntu-20.04
-    needs: 
-      - nix-test-derivation
-      - bump-npm
-    steps:
-      - uses: actions/checkout@v3
-        with:
-            submodules: true
-            fetch-depth: 0
-      - uses: cachix/install-nix-action@v22
-        with:
-          nix_path: nixos-unstable=channel:nixos-unstable:nixpkgs=channel:nixos-unstable
-          github_access_token: ${{ secrets.GITHUB_TOKEN }}
       - name: Check flake output
         run: nix flake check
+      - name: Build dependencies and site
+        run: nix build
