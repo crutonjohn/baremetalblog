@@ -15,17 +15,18 @@ pkgs.stdenv.mkDerivation {
   src = ../../..;
   nativeBuildInputs = [nodejs pkgs.hugo];
   configurePhase = ''
-    cp -r ${blonde_src} themes/Blonde
+    mkdir -p themes/Blonde
+    cp -r ${blonde_src}/* themes/Blonde
   '';
   buildPhase = ''
     ln -s ${nodeDependencies}/lib/node_modules ./node_modules
     export PATH="${nodeDependencies}/bin:$PATH"
 
+    ls -al themes/Blonde
+
     mkdir -p $out
 
-    hugo --minify -t Blonde
-
-    cp -r public $out/
+    hugo --minify --noBuildLock -t Blonde -d $out/
 
   '';
 }
