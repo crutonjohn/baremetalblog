@@ -3,5 +3,5 @@ resources/
 .vscode
 .DS_Store
 content/post/staging/
-result
-result*
+result/
+result*/
