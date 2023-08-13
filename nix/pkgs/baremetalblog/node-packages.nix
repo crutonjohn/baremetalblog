@@ -346,13 +346,13 @@ let
         sha512 = "PYjyFOLKQ9y57JvQ6QLo8dAgNqswh8M1RMJYdQduT6xbWSgK36P/Z/v+p888pM69jMMfS8Xd8F6I1kQ/I9HUGg==";
       };
     };
-    "autoprefixer-10.4.14" = {
+    "autoprefixer-10.4.15" = {
       name = "autoprefixer";
       packageName = "autoprefixer";
-      version = "10.4.14";
+      version = "10.4.15";
       src = fetchurl {
-        url = "https://registry.npmjs.org/autoprefixer/-/autoprefixer-10.4.14.tgz";
-        sha512 = "FQzyfOsTlwVzjHxKEqRIAdJx9niO6VCBCoEwax/VLSoQF29ggECcPuBqUMZ+u8jCZOPSy8b8/8KnuFbp0SaFZQ==";
+        url = "https://registry.npmjs.org/autoprefixer/-/autoprefixer-10.4.15.tgz";
+        sha512 = "KCuPB8ZCIqFdA4HwKXsvz7j6gvSDNhDP7WnUjBleRkKjPdvCmHFuQ77ocavI8FT6NdvlBnE2UFr2H4Mycn8Vew==";
       };
     };
     "balanced-match-1.0.2" = {
@@ -1578,7 +1578,7 @@ let
       sources."any-promise-1.3.0"
       sources."anymatch-3.1.3"
       sources."arg-4.1.3"
-      sources."autoprefixer-10.4.14"
+      sources."autoprefixer-10.4.15"
       sources."balanced-match-1.0.2"
       sources."binary-extensions-2.2.0"
       sources."brace-expansion-1.1.11"
