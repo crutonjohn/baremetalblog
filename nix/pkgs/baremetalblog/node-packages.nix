@@ -1417,13 +1417,13 @@ let
         sha512 = "NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==";
       };
     };
-    "tslib-2.6.1" = {
+    "tslib-2.6.2" = {
       name = "tslib";
       packageName = "tslib";
-      version = "2.6.1";
+      version = "2.6.2";
       src = fetchurl {
-        url = "https://registry.npmjs.org/tslib/-/tslib-2.6.1.tgz";
-        sha512 = "t0hLfiEKfMUoqhG+U1oid7Pva4bbDPHYfJNiB7BiIjRkj1pyC++4N3huJfqY6aRH6VTB0rvtzQwjM4K6qpfOig==";
+        url = "https://registry.npmjs.org/tslib/-/tslib-2.6.2.tgz";
+        sha512 = "AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==";
       };
     };
     "typescript-5.1.6" = {
@@ -1711,7 +1711,7 @@ let
       sources."tree-kill-1.2.2"
       sources."ts-interface-checker-0.1.13"
       sources."ts-node-10.9.1"
-      sources."tslib-2.6.1"
+      sources."tslib-2.6.2"
       sources."typescript-5.1.6"
       sources."universalify-2.0.0"
       sources."update-browserslist-db-1.0.11"
