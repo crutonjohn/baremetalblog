@@ -13,13 +13,13 @@ let
         sha512 = "UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==";
       };
     };
-    "@babel/runtime-7.22.10" = {
+    "@babel/runtime-7.22.11" = {
       name = "_at_babel_slash_runtime";
       packageName = "@babel/runtime";
-      version = "7.22.10";
+      version = "7.22.11";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@babel/runtime/-/runtime-7.22.10.tgz";
-        sha512 = "21t/fkKLMZI4pqP2wlmsQAWnYW1PDyKyyUV4vCi+B25ydmdaYTKXPwCj0BzSUnZf4seIiYvSA3jcZ3gdsMFkLQ==";
+        url = "https://registry.npmjs.org/@babel/runtime/-/runtime-7.22.11.tgz";
+        sha512 = "ee7jVNlWN09+KftVOu9n7S8gQzD/Z6hN/I8VBRXW4P1+Xe7kJGXMwu8vds4aGIMHZnNbdpSWCfZZtinytpcAvA==";
       };
     };
     "@cspotcode/source-map-support-0.8.1" = {
@@ -1542,7 +1542,7 @@ let
     src = ../../..;
     dependencies = [
       sources."@alloc/quick-lru-5.2.0"
-      sources."@babel/runtime-7.22.10"
+      sources."@babel/runtime-7.22.11"
       sources."@cspotcode/source-map-support-0.8.1"
       sources."@jridgewell/gen-mapping-0.3.3"
       sources."@jridgewell/resolve-uri-3.1.1"
