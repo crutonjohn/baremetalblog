@@ -625,13 +625,13 @@ let
         sha512 = "qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ==";
       };
     };
-    "fraction.js-4.3.2" = {
+    "fraction.js-4.3.3" = {
       name = "fraction.js";
       packageName = "fraction.js";
-      version = "4.3.2";
+      version = "4.3.3";
       src = fetchurl {
-        url = "https://registry.npmjs.org/fraction.js/-/fraction.js-4.3.2.tgz";
-        sha512 = "9VLF466MqX1OUP7/d9r7/Vsvu6Hpp+taXBLmiR5x6mEYfT0BDkGVBt5TyA1aDu1WzIE1sF8F66evOFaz7iAEGQ==";
+        url = "https://registry.npmjs.org/fraction.js/-/fraction.js-4.3.3.tgz";
+        sha512 = "tkkgxPcxJO0waFMe9i3zIES/tbhgOxXT/20ESNQkUvWASktF8Mxnt0vt147ZA+MNGme+w3mmPD0m61ySNmpTHw==";
       };
     };
     "fs-extra-11.1.1" = {
@@ -1622,7 +1622,7 @@ let
       sources."fast-glob-3.3.1"
       sources."fastq-1.15.0"
       sources."fill-range-7.0.1"
-      sources."fraction.js-4.3.2"
+      sources."fraction.js-4.3.3"
       sources."fs-extra-11.1.1"
       sources."fs.realpath-1.0.0"
       sources."fsevents-2.3.3"
