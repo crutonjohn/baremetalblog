@@ -202,13 +202,13 @@ let
         sha512 = "CiWQtkFnZElXQUalaHp+Wacw0Jd+24ncRYhqaJ9YKnEQP1H82CxIIuQqLM8IFaLpn5dpY6SgzaeubWF46hjcLA==";
       };
     };
-    "@swc/helpers-0.5.1" = {
+    "@swc/helpers-0.5.2" = {
       name = "_at_swc_slash_helpers";
       packageName = "@swc/helpers";
-      version = "0.5.1";
+      version = "0.5.2";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@swc/helpers/-/helpers-0.5.1.tgz";
-        sha512 = "sJ902EfIzn1Fa+qYmjdQqh8tPsoxyBz+8yBKC2HKUxyezKJFwPGOn7pv4WY6QuQW//ySQi5lJjA/ZT9sNWWNTg==";
+        url = "https://registry.npmjs.org/@swc/helpers/-/helpers-0.5.2.tgz";
+        sha512 = "E4KcWTpoLHqwPHLxidpOqQbcrZVgi0rsmmZXUle1jXmJfuIf/UWpczUJ7MZZ5tlxytgJXyp0w4PGkkeLiuIdZw==";
       };
     };
     "@swc/types-0.1.4" = {
@@ -1572,7 +1572,7 @@ let
       sources."@swc/core-win32-arm64-msvc-1.3.83"
       sources."@swc/core-win32-ia32-msvc-1.3.83"
       sources."@swc/core-win32-x64-msvc-1.3.83"
-      sources."@swc/helpers-0.5.1"
+      sources."@swc/helpers-0.5.2"
       sources."@swc/types-0.1.4"
       sources."@swc/wasm-1.3.83"
       sources."@tailwindcss/typography-0.5.10"
