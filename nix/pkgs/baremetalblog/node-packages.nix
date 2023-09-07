@@ -832,13 +832,13 @@ let
         sha512 = "41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==";
       };
     };
-    "jiti-1.19.3" = {
+    "jiti-1.20.0" = {
       name = "jiti";
       packageName = "jiti";
-      version = "1.19.3";
+      version = "1.20.0";
       src = fetchurl {
-        url = "https://registry.npmjs.org/jiti/-/jiti-1.19.3.tgz";
-        sha512 = "5eEbBDQT/jF1xg6l36P+mWGGoH9Spuy0PCdSr2dtWRDGC6ph/w9ZCL4lmESW8f8F7MwT3XKescfP0wnZWAKL9w==";
+        url = "https://registry.npmjs.org/jiti/-/jiti-1.20.0.tgz";
+        sha512 = "3TV69ZbrvV6U5DfQimop50jE9Dl6J8O1ja1dvBbMba/sZ3YBEQqJ2VZRoQPVnhlzjNtU1vaXRZVrVjU4qtm8yA==";
       };
     };
     "jsonfile-6.1.0" = {
@@ -1648,7 +1648,7 @@ let
       sources."is-fullwidth-code-point-3.0.0"
       sources."is-glob-4.0.3"
       sources."is-number-7.0.0"
-      sources."jiti-1.19.3"
+      sources."jiti-1.20.0"
       sources."jsonfile-6.1.0"
       sources."lilconfig-2.1.0"
       sources."lines-and-columns-1.2.4"
