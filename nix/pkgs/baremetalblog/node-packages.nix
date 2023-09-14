@@ -1219,13 +1219,13 @@ let
         sha512 = "fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==";
       };
     };
-    "resolve-1.22.4" = {
+    "resolve-1.22.5" = {
       name = "resolve";
       packageName = "resolve";
-      version = "1.22.4";
+      version = "1.22.5";
       src = fetchurl {
-        url = "https://registry.npmjs.org/resolve/-/resolve-1.22.4.tgz";
-        sha512 = "PXNdCiPqDqeUou+w1C2eTQbNfxKSuMxqTCuvlmmMsk1NWHL5fRrhY6Pl0qEYYc6+QqGClco1Qj8XnjPego4wfg==";
+        url = "https://registry.npmjs.org/resolve/-/resolve-1.22.5.tgz";
+        sha512 = "qWhv7PF1V95QPvRoUGHxOtnAlEvlXBylMZcjUR9pAumMmveFtcHJRXGIr+TkjfNJVQypqv2qcDiiars2y1PsSg==";
       };
     };
     "reusify-1.0.4" = {
@@ -1694,7 +1694,7 @@ let
       sources."readdirp-3.6.0"
       sources."regenerator-runtime-0.14.0"
       sources."require-directory-2.1.1"
-      sources."resolve-1.22.4"
+      sources."resolve-1.22.5"
       sources."reusify-1.0.4"
       sources."run-parallel-1.2.0"
       sources."rxjs-7.8.1"
