@@ -220,13 +220,13 @@ let
         sha512 = "z/G02d+59gyyUb7KYhKi9jOhicek6QD2oMaotUyG+lUkybpXoV49dY9bj7Ah5Q+y7knK2jU67UTX9FyfGzaxQg==";
       };
     };
-    "@swc/wasm-1.3.85" = {
+    "@swc/wasm-1.3.86" = {
       name = "_at_swc_slash_wasm";
       packageName = "@swc/wasm";
-      version = "1.3.85";
+      version = "1.3.86";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@swc/wasm/-/wasm-1.3.85.tgz";
-        sha512 = "lO2QTgKsq/CQSs0fbojiFFmbMo5Nv1cnDdbyLUpl7q+XXkFA/uBh5zF8Bgv5kqJo2Yoo+ydCbTq7GQLrmcjyMQ==";
+        url = "https://registry.npmjs.org/@swc/wasm/-/wasm-1.3.86.tgz";
+        sha512 = "89PIZE4W9xVrPBlhuwjMYp/91HfNtjJynzHg51Ycvdm6qC9syB/BflOg9euKykDhpuzhVERxNl6mDzXSudV2pQ==";
       };
     };
     "@tailwindcss/typography-0.5.10" = {
@@ -1075,13 +1075,13 @@ let
         sha512 = "saLsH7WeYYPiD25LDuLRRY/i+6HaPYr6G1OUlN39otzkSTxKnubR9RTxS3/Kk50s1g2JTgFwWQDQyplC5/SHZg==";
       };
     };
-    "postcss-8.4.29" = {
+    "postcss-8.4.30" = {
       name = "postcss";
       packageName = "postcss";
-      version = "8.4.29";
+      version = "8.4.30";
       src = fetchurl {
-        url = "https://registry.npmjs.org/postcss/-/postcss-8.4.29.tgz";
-        sha512 = "cbI+jaqIeu/VGqXEarWkRCCffhjgXc0qjBtXpqJhTBohMUjUQnbBr0xqX3vEKudc4iviTewcJo5ajcec5+wdJw==";
+        url = "https://registry.npmjs.org/postcss/-/postcss-8.4.30.tgz";
+        sha512 = "7ZEao1g4kd68l97aWG/etQKPKq07us0ieSZ2TnFDk11i0ZfDW2AwKHYU8qv4MZKqN2fdBfg+7q0ES06UA73C1g==";
       };
     };
     "postcss-cli-10.1.0" = {
@@ -1574,7 +1574,7 @@ let
       sources."@swc/core-win32-x64-msvc-1.3.85"
       sources."@swc/helpers-0.5.2"
       sources."@swc/types-0.1.4"
-      sources."@swc/wasm-1.3.85"
+      sources."@swc/wasm-1.3.86"
       sources."@tailwindcss/typography-0.5.10"
       sources."@tsconfig/node10-1.0.9"
       sources."@tsconfig/node12-1.0.11"
@@ -1675,7 +1675,7 @@ let
       sources."picomatch-2.3.1"
       sources."pify-2.3.0"
       sources."pirates-4.0.6"
-      sources."postcss-8.4.29"
+      sources."postcss-8.4.30"
       sources."postcss-cli-10.1.0"
       sources."postcss-import-15.1.0"
       sources."postcss-js-4.0.1"
