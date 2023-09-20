@@ -355,13 +355,13 @@ let
         sha512 = "PYjyFOLKQ9y57JvQ6QLo8dAgNqswh8M1RMJYdQduT6xbWSgK36P/Z/v+p888pM69jMMfS8Xd8F6I1kQ/I9HUGg==";
       };
     };
-    "autoprefixer-10.4.15" = {
+    "autoprefixer-10.4.16" = {
       name = "autoprefixer";
       packageName = "autoprefixer";
-      version = "10.4.15";
+      version = "10.4.16";
       src = fetchurl {
-        url = "https://registry.npmjs.org/autoprefixer/-/autoprefixer-10.4.15.tgz";
-        sha512 = "KCuPB8ZCIqFdA4HwKXsvz7j6gvSDNhDP7WnUjBleRkKjPdvCmHFuQ77ocavI8FT6NdvlBnE2UFr2H4Mycn8Vew==";
+        url = "https://registry.npmjs.org/autoprefixer/-/autoprefixer-10.4.16.tgz";
+        sha512 = "7vd3UC6xKp0HLfua5IjZlcXvGAGy7cBAXTg2lyQ/8WpNhd6SiZ8Be+xm3FyBSYJx5GKcpRCzBh7RH4/0dnY+uQ==";
       };
     };
     "balanced-match-1.0.2" = {
@@ -571,13 +571,13 @@ let
         sha512 = "+HlytyjlPKnIG8XuRG8WvmBP8xs8P71y+SKKS6ZXWoEgLuePxtDoUEiH7WkdePWrQ5JBpE6aoVqfZfJUQkjXwA==";
       };
     };
-    "electron-to-chromium-1.4.525" = {
+    "electron-to-chromium-1.4.526" = {
       name = "electron-to-chromium";
       packageName = "electron-to-chromium";
-      version = "1.4.525";
+      version = "1.4.526";
       src = fetchurl {
-        url = "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.525.tgz";
-        sha512 = "GIZ620hDK4YmIqAWkscG4W6RwY6gOx1y5J6f4JUQwctiJrqH2oxZYU4mXHi35oV32tr630UcepBzSBGJ/WYcZA==";
+        url = "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.526.tgz";
+        sha512 = "tjjTMjmZAx1g6COrintLTa2/jcafYKxKoiEkdQOrVdbLaHh2wCt2nsAF8ZHweezkrP+dl/VG9T5nabcYoo0U5Q==";
       };
     };
     "emoji-regex-8.0.0" = {
@@ -1588,7 +1588,7 @@ let
       sources."any-promise-1.3.0"
       sources."anymatch-3.1.3"
       sources."arg-4.1.3"
-      sources."autoprefixer-10.4.15"
+      sources."autoprefixer-10.4.16"
       sources."balanced-match-1.0.2"
       sources."binary-extensions-2.2.0"
       sources."brace-expansion-1.1.11"
@@ -1616,7 +1616,7 @@ let
       sources."diff-4.0.2"
       sources."dir-glob-3.0.1"
       sources."dlv-1.1.3"
-      sources."electron-to-chromium-1.4.525"
+      sources."electron-to-chromium-1.4.526"
       sources."emoji-regex-8.0.0"
       sources."escalade-3.1.1"
       sources."fast-glob-3.3.1"
