@@ -1453,13 +1453,13 @@ let
         sha512 = "hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==";
       };
     };
-    "update-browserslist-db-1.0.12" = {
+    "update-browserslist-db-1.0.13" = {
       name = "update-browserslist-db";
       packageName = "update-browserslist-db";
-      version = "1.0.12";
+      version = "1.0.13";
       src = fetchurl {
-        url = "https://registry.npmjs.org/update-browserslist-db/-/update-browserslist-db-1.0.12.tgz";
-        sha512 = "tE1smlR58jxbFMtrMpFNRmsrOXlpNXss965T1CrpwuZUzUAg/TBQc94SpyhDLSzrqrJS9xTRBthnZAGcE1oaxg==";
+        url = "https://registry.npmjs.org/update-browserslist-db/-/update-browserslist-db-1.0.13.tgz";
+        sha512 = "xebP81SNcPuNpPP3uzeW1NYXxI3rxyJzF3pD6sH4jE7o/IX+WtSpwnVU+qIsDPyk0d3hmFQ7mjqc6AtV604hbg==";
       };
     };
     "util-deprecate-1.0.2" = {
@@ -1724,7 +1724,7 @@ let
       sources."tslib-2.6.2"
       sources."typescript-5.2.2"
       sources."universalify-2.0.0"
-      sources."update-browserslist-db-1.0.12"
+      sources."update-browserslist-db-1.0.13"
       sources."util-deprecate-1.0.2"
       sources."v8-compile-cache-lib-3.0.1"
       sources."wrap-ansi-7.0.0"
