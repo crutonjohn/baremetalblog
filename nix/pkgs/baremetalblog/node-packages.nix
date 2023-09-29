@@ -202,13 +202,13 @@ let
         sha512 = "OpWAW5ljKcPJ3SQ0pUuKqYfwXv7ssIhVgrH9XP9ONtdgXKWZRL9hqJQkcL55FARw/gDjKanoCM47wsTNQL+ZZA==";
       };
     };
-    "@swc/counter-0.1.1" = {
+    "@swc/counter-0.1.2" = {
       name = "_at_swc_slash_counter";
       packageName = "@swc/counter";
-      version = "0.1.1";
+      version = "0.1.2";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@swc/counter/-/counter-0.1.1.tgz";
-        sha512 = "xVRaR4u9hcYjFvcSg71Lz5Bo4//CyjAAfMxa7UsaDSYxAshflUkVJWiyVWrfxC59z2kP1IzI4/1BEpnhI9o3Mw==";
+        url = "https://registry.npmjs.org/@swc/counter/-/counter-0.1.2.tgz";
+        sha512 = "9F4ys4C74eSTEUNndnER3VJ15oru2NumfQxS8geE+f3eB5xvfxpWyqE5XlVnxb/R14uoXi6SLbBwwiDSkv+XEw==";
       };
     };
     "@swc/helpers-0.5.2" = {
@@ -1581,7 +1581,7 @@ let
       sources."@swc/core-win32-arm64-msvc-1.3.90"
       sources."@swc/core-win32-ia32-msvc-1.3.90"
       sources."@swc/core-win32-x64-msvc-1.3.90"
-      sources."@swc/counter-0.1.1"
+      sources."@swc/counter-0.1.2"
       sources."@swc/helpers-0.5.2"
       sources."@swc/types-0.1.5"
       sources."@swc/wasm-1.3.90"
