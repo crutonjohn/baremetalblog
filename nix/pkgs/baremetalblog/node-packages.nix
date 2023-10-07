@@ -193,13 +193,13 @@ let
         sha512 = "vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==";
       };
     };
-    "@types/node-20.8.2" = {
+    "@types/node-20.8.3" = {
       name = "_at_types_slash_node";
       packageName = "@types/node";
-      version = "20.8.2";
+      version = "20.8.3";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@types/node/-/node-20.8.2.tgz";
-        sha512 = "Vvycsc9FQdwhxE3y3DzeIxuEJbWGDsnrxvMADzTDF/lcdR9/K+AQIeAghTQsHtotg/q0j3WEOYS/jQgSdWue3w==";
+        url = "https://registry.npmjs.org/@types/node/-/node-20.8.3.tgz";
+        sha512 = "jxiZQFpb+NlH5kjW49vXxvxTjeeqlbsnTAdBTKpzEdPs9itay7MscYXz3Fo9VYFEsfQ6LJFitHad3faerLAjCw==";
       };
     };
     "acorn-8.10.0" = {
@@ -1481,7 +1481,7 @@ let
       sources."@tsconfig/node12-1.0.11"
       sources."@tsconfig/node14-1.0.3"
       sources."@tsconfig/node16-1.0.4"
-      sources."@types/node-20.8.2"
+      sources."@types/node-20.8.3"
       sources."acorn-8.10.0"
       sources."acorn-walk-8.2.0"
       sources."ansi-regex-5.0.1"
