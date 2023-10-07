@@ -121,13 +121,13 @@ let
         sha512 = "9F4ys4C74eSTEUNndnER3VJ15oru2NumfQxS8geE+f3eB5xvfxpWyqE5XlVnxb/R14uoXi6SLbBwwiDSkv+XEw==";
       };
     };
-    "@swc/helpers-0.5.2" = {
+    "@swc/helpers-0.5.3" = {
       name = "_at_swc_slash_helpers";
       packageName = "@swc/helpers";
-      version = "0.5.2";
+      version = "0.5.3";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@swc/helpers/-/helpers-0.5.2.tgz";
-        sha512 = "E4KcWTpoLHqwPHLxidpOqQbcrZVgi0rsmmZXUle1jXmJfuIf/UWpczUJ7MZZ5tlxytgJXyp0w4PGkkeLiuIdZw==";
+        url = "https://registry.npmjs.org/@swc/helpers/-/helpers-0.5.3.tgz";
+        sha512 = "FaruWX6KdudYloq1AHD/4nU+UsMTdNE8CKyrseXWEcgjDAbvkwJg2QGPAnfIJLIWsjZOSPLOAykK6fuYp4vp4A==";
       };
     };
     "@swc/types-0.1.5" = {
@@ -1473,7 +1473,7 @@ let
       sources."@nodelib/fs.walk-1.2.8"
       sources."@swc/core-1.3.92"
       sources."@swc/counter-0.1.2"
-      sources."@swc/helpers-0.5.2"
+      sources."@swc/helpers-0.5.3"
       sources."@swc/types-0.1.5"
       sources."@swc/wasm-1.3.92"
       sources."@tailwindcss/typography-0.5.10"
