@@ -193,13 +193,13 @@ let
         sha512 = "vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==";
       };
     };
-    "@types/node-20.8.3" = {
+    "@types/node-20.8.4" = {
       name = "_at_types_slash_node";
       packageName = "@types/node";
-      version = "20.8.3";
+      version = "20.8.4";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@types/node/-/node-20.8.3.tgz";
-        sha512 = "jxiZQFpb+NlH5kjW49vXxvxTjeeqlbsnTAdBTKpzEdPs9itay7MscYXz3Fo9VYFEsfQ6LJFitHad3faerLAjCw==";
+        url = "https://registry.npmjs.org/@types/node/-/node-20.8.4.tgz";
+        sha512 = "ZVPnqU58giiCjSxjVUESDtdPk4QR5WQhhINbc9UBrKLU68MX5BF6kbQzTrkwbolyr0X8ChBpXfavr5mZFKZQ5A==";
       };
     };
     "acorn-8.10.0" = {
@@ -490,13 +490,13 @@ let
         sha512 = "+HlytyjlPKnIG8XuRG8WvmBP8xs8P71y+SKKS6ZXWoEgLuePxtDoUEiH7WkdePWrQ5JBpE6aoVqfZfJUQkjXwA==";
       };
     };
-    "electron-to-chromium-1.4.544" = {
+    "electron-to-chromium-1.4.545" = {
       name = "electron-to-chromium";
       packageName = "electron-to-chromium";
-      version = "1.4.544";
+      version = "1.4.545";
       src = fetchurl {
-        url = "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.544.tgz";
-        sha512 = "54z7squS1FyFRSUqq/knOFSptjjogLZXbKcYk3B0qkE1KZzvqASwRZnY2KzZQJqIYLVD38XZeoiMRflYSwyO4w==";
+        url = "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.545.tgz";
+        sha512 = "G1HKumUw+y5yxMjewGfKz0XrqG6O+Tb4zrlC/Vs1+9riRXBuFlO0hOEXP3xeI+ltlJkbVUuLkYdmjHYH6Jkiow==";
       };
     };
     "emoji-regex-8.0.0" = {
@@ -1354,6 +1354,15 @@ let
         sha512 = "mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w==";
       };
     };
+    "undici-types-5.25.3" = {
+      name = "undici-types";
+      packageName = "undici-types";
+      version = "5.25.3";
+      src = fetchurl {
+        url = "https://registry.npmjs.org/undici-types/-/undici-types-5.25.3.tgz";
+        sha512 = "Ga1jfYwRn7+cP9v8auvEXN1rX3sWqlayd4HP7OKk4mZWylEmu3KzXDUGrQUN6Ol7qo1gPvB2e5gX6udnyEPgdA==";
+      };
+    };
     "universalify-2.0.0" = {
       name = "universalify";
       packageName = "universalify";
@@ -1481,7 +1490,7 @@ let
       sources."@tsconfig/node12-1.0.11"
       sources."@tsconfig/node14-1.0.3"
       sources."@tsconfig/node16-1.0.4"
-      sources."@types/node-20.8.3"
+      sources."@types/node-20.8.4"
       sources."acorn-8.10.0"
       sources."acorn-walk-8.2.0"
       sources."ansi-regex-5.0.1"
@@ -1517,7 +1526,7 @@ let
       sources."diff-4.0.2"
       sources."dir-glob-3.0.1"
       sources."dlv-1.1.3"
-      sources."electron-to-chromium-1.4.544"
+      sources."electron-to-chromium-1.4.545"
       sources."emoji-regex-8.0.0"
       sources."escalade-3.1.1"
       sources."fast-glob-3.3.1"
@@ -1623,6 +1632,7 @@ let
       sources."ts-node-10.9.1"
       sources."tslib-2.6.2"
       sources."typescript-5.2.2"
+      sources."undici-types-5.25.3"
       sources."universalify-2.0.0"
       sources."update-browserslist-db-1.0.13"
       sources."util-deprecate-1.0.2"
