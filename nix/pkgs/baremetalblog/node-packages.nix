@@ -13,13 +13,13 @@ let
         sha512 = "UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==";
       };
     };
-    "@babel/runtime-7.23.1" = {
+    "@babel/runtime-7.23.2" = {
       name = "_at_babel_slash_runtime";
       packageName = "@babel/runtime";
-      version = "7.23.1";
+      version = "7.23.2";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@babel/runtime/-/runtime-7.23.1.tgz";
-        sha512 = "hC2v6p8ZSI/W0HUzh3V8C5g+NwSKzKPtJwSpTjwl0o297GP9+ZLQSkdvHz46CM3LqyoXxq+5G9komY+eSqSO0g==";
+        url = "https://registry.npmjs.org/@babel/runtime/-/runtime-7.23.2.tgz";
+        sha512 = "mM8eg4yl5D6i3lu2QKPuPH4FArvJ8KhTofbE7jwMUv9KX5mBvwPAqnV3MlyBNqdp9RyRKP6Yck8TrfYrPvX3bg==";
       };
     };
     "@cspotcode/source-map-support-0.8.1" = {
@@ -490,13 +490,13 @@ let
         sha512 = "+HlytyjlPKnIG8XuRG8WvmBP8xs8P71y+SKKS6ZXWoEgLuePxtDoUEiH7WkdePWrQ5JBpE6aoVqfZfJUQkjXwA==";
       };
     };
-    "electron-to-chromium-1.4.549" = {
+    "electron-to-chromium-1.4.550" = {
       name = "electron-to-chromium";
       packageName = "electron-to-chromium";
-      version = "1.4.549";
+      version = "1.4.550";
       src = fetchurl {
-        url = "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.549.tgz";
-        sha512 = "gpXfJslSi4hYDkA0mTLEpYKRv9siAgSUgZ+UWyk+J5Cttpd1ThCVwdclzIwQSclz3hYn049+M2fgrP1WpvF8xg==";
+        url = "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.550.tgz";
+        sha512 = "LfcsAzGj18xBYFM5WetwNQdqA03iLDozfCo0SWpu5G9zA5H1G/2GOiHOVnQdOrqaZ8vI8IiSgS3JMUrq930zsw==";
       };
     };
     "emoji-regex-8.0.0" = {
@@ -1470,7 +1470,7 @@ let
     src = ../../..;
     dependencies = [
       sources."@alloc/quick-lru-5.2.0"
-      sources."@babel/runtime-7.23.1"
+      sources."@babel/runtime-7.23.2"
       sources."@cspotcode/source-map-support-0.8.1"
       sources."@jridgewell/gen-mapping-0.3.3"
       sources."@jridgewell/resolve-uri-3.1.1"
@@ -1526,7 +1526,7 @@ let
       sources."diff-4.0.2"
       sources."dir-glob-3.0.1"
       sources."dlv-1.1.3"
-      sources."electron-to-chromium-1.4.549"
+      sources."electron-to-chromium-1.4.550"
       sources."emoji-regex-8.0.0"
       sources."escalade-3.1.1"
       sources."fast-glob-3.3.1"
