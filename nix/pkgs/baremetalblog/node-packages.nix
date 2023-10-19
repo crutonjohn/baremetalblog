@@ -409,13 +409,13 @@ let
         sha512 = "/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==";
       };
     };
-    "concurrently-8.2.1" = {
+    "concurrently-8.2.2" = {
       name = "concurrently";
       packageName = "concurrently";
-      version = "8.2.1";
+      version = "8.2.2";
       src = fetchurl {
-        url = "https://registry.npmjs.org/concurrently/-/concurrently-8.2.1.tgz";
-        sha512 = "nVraf3aXOpIcNud5pB9M82p1tynmZkrSGQ1p6X/VY8cJ+2LMVqAgXsJxYYefACSHbTYlm92O1xuhdGTjwoEvbQ==";
+        url = "https://registry.npmjs.org/concurrently/-/concurrently-8.2.2.tgz";
+        sha512 = "1dP4gpXFhei8IOtlXRE/T/4H88ElHgTiUzh71YUmtjTEHMSRS2Z/fgOxHSxxusGHogsRfxNq1vyAwxSC+EVyDg==";
       };
     };
     "create-require-1.1.1" = {
@@ -1517,7 +1517,7 @@ let
       sources."color-name-1.1.4"
       sources."commander-4.1.1"
       sources."concat-map-0.0.1"
-      sources."concurrently-8.2.1"
+      sources."concurrently-8.2.2"
       sources."create-require-1.1.1"
       sources."cssesc-3.0.0"
       sources."date-fns-2.30.0"
