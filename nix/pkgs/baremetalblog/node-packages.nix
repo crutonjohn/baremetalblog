@@ -193,13 +193,13 @@ let
         sha512 = "vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==";
       };
     };
-    "@types/node-20.8.8" = {
+    "@types/node-20.8.9" = {
       name = "_at_types_slash_node";
       packageName = "@types/node";
-      version = "20.8.8";
+      version = "20.8.9";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@types/node/-/node-20.8.8.tgz";
-        sha512 = "YRsdVxq6OaLfmR9Hy816IMp33xOBjfyOgUd77ehqg96CFywxAPbDbXvAsuN2KVg2HOT8Eh6uAfU+l4WffwPVrQ==";
+        url = "https://registry.npmjs.org/@types/node/-/node-20.8.9.tgz";
+        sha512 = "UzykFsT3FhHb1h7yD4CA4YhBHq545JC0YnEz41xkipN88eKQtL6rSgocL5tbAP6Ola9Izm/Aw4Ora8He4x0BHg==";
       };
     };
     "acorn-8.10.0" = {
@@ -1363,13 +1363,13 @@ let
         sha512 = "mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w==";
       };
     };
-    "undici-types-5.25.3" = {
+    "undici-types-5.26.5" = {
       name = "undici-types";
       packageName = "undici-types";
-      version = "5.25.3";
+      version = "5.26.5";
       src = fetchurl {
-        url = "https://registry.npmjs.org/undici-types/-/undici-types-5.25.3.tgz";
-        sha512 = "Ga1jfYwRn7+cP9v8auvEXN1rX3sWqlayd4HP7OKk4mZWylEmu3KzXDUGrQUN6Ol7qo1gPvB2e5gX6udnyEPgdA==";
+        url = "https://registry.npmjs.org/undici-types/-/undici-types-5.26.5.tgz";
+        sha512 = "JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==";
       };
     };
     "universalify-2.0.0" = {
@@ -1499,7 +1499,7 @@ let
       sources."@tsconfig/node12-1.0.11"
       sources."@tsconfig/node14-1.0.3"
       sources."@tsconfig/node16-1.0.4"
-      sources."@types/node-20.8.8"
+      sources."@types/node-20.8.9"
       sources."acorn-8.10.0"
       sources."acorn-walk-8.2.0"
       sources."ansi-regex-5.0.1"
@@ -1642,7 +1642,7 @@ let
       sources."ts-node-10.9.1"
       sources."tslib-2.6.2"
       sources."typescript-5.2.2"
-      sources."undici-types-5.25.3"
+      sources."undici-types-5.26.5"
       sources."universalify-2.0.0"
       sources."update-browserslist-db-1.0.13"
       sources."util-deprecate-1.0.2"
