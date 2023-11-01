@@ -1372,13 +1372,13 @@ let
         sha512 = "JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==";
       };
     };
-    "universalify-2.0.0" = {
+    "universalify-2.0.1" = {
       name = "universalify";
       packageName = "universalify";
-      version = "2.0.0";
+      version = "2.0.1";
       src = fetchurl {
-        url = "https://registry.npmjs.org/universalify/-/universalify-2.0.0.tgz";
-        sha512 = "hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==";
+        url = "https://registry.npmjs.org/universalify/-/universalify-2.0.1.tgz";
+        sha512 = "gptHNQghINnc/vTGIk0SOFGFNXw7JVrlRUtConJRlvaw6DuX0wO5Jeko9sWrMBhh+PsYAZ7oXAiOnf/UKogyiw==";
       };
     };
     "update-browserslist-db-1.0.13" = {
@@ -1643,7 +1643,7 @@ let
       sources."tslib-2.6.2"
       sources."typescript-5.2.2"
       sources."undici-types-5.26.5"
-      sources."universalify-2.0.0"
+      sources."universalify-2.0.1"
       sources."update-browserslist-db-1.0.13"
       sources."util-deprecate-1.0.2"
       sources."v8-compile-cache-lib-3.0.1"
