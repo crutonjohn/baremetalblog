@@ -868,13 +868,13 @@ let
         sha512 = "z81GNO7nnYMEhrGh9LeymoE4+Yr0Wn5McHIZMK5cfQCl+NDX08sCZgUc9/6MHni9IWuFLm1Z3HTCXu2z9fN62Q==";
       };
     };
-    "nanoid-3.3.6" = {
+    "nanoid-3.3.7" = {
       name = "nanoid";
       packageName = "nanoid";
-      version = "3.3.6";
+      version = "3.3.7";
       src = fetchurl {
-        url = "https://registry.npmjs.org/nanoid/-/nanoid-3.3.6.tgz";
-        sha512 = "BGcqMMJuToF7i1rt+2PWSNVnWIkGCU78jBG3RxO/bZlnZPK2Cmi2QaffxGO/2RvWi9sL+FAiRiXMgsyxQ1DIDA==";
+        url = "https://registry.npmjs.org/nanoid/-/nanoid-3.3.7.tgz";
+        sha512 = "eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==";
       };
     };
     "node-releases-2.0.13" = {
@@ -1580,7 +1580,7 @@ let
       sources."micromatch-4.0.5"
       sources."minimatch-3.1.2"
       sources."mz-2.7.0"
-      sources."nanoid-3.3.6"
+      sources."nanoid-3.3.7"
       sources."node-releases-2.0.13"
       sources."normalize-path-3.0.0"
       sources."normalize-range-0.1.2"
