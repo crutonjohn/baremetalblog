@@ -1363,13 +1363,13 @@ let
         sha512 = "AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==";
       };
     };
-    "typescript-5.2.2" = {
+    "typescript-5.3.2" = {
       name = "typescript";
       packageName = "typescript";
-      version = "5.2.2";
+      version = "5.3.2";
       src = fetchurl {
-        url = "https://registry.npmjs.org/typescript/-/typescript-5.2.2.tgz";
-        sha512 = "mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w==";
+        url = "https://registry.npmjs.org/typescript/-/typescript-5.3.2.tgz";
+        sha512 = "6l+RyNy7oAHDfxC4FzSJcz9vnjTKxrLpDG5M2Vu4SHRVNg6xzqZp6LYSR9zjqQTu8DU/f5xwxUdADOkbrIX2gQ==";
       };
     };
     "undici-types-5.26.5" = {
@@ -1651,7 +1651,7 @@ let
       sources."ts-interface-checker-0.1.13"
       sources."ts-node-10.9.1"
       sources."tslib-2.6.2"
-      sources."typescript-5.2.2"
+      sources."typescript-5.3.2"
       sources."undici-types-5.26.5"
       sources."universalify-2.0.1"
       sources."update-browserslist-db-1.0.13"
