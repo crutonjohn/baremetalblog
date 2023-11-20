@@ -778,6 +778,15 @@ let
         sha512 = "utWOt/GHzuUxnLKxB6dk81RoOeoNeHgbrXiuGk4yyF5qlRz+iIVWu56E2fqGHFrXz0QNUhLB/8nKqvRH66JKGQ==";
       };
     };
+    "lilconfig-3.0.0" = {
+      name = "lilconfig";
+      packageName = "lilconfig";
+      version = "3.0.0";
+      src = fetchurl {
+        url = "https://registry.npmjs.org/lilconfig/-/lilconfig-3.0.0.tgz";
+        sha512 = "K2U4W2Ff5ibV7j7ydLr+zLAkIg5JJ4lPn1Ltsdt+Tz/IjQ8buJ55pZAxoP34lqIiwtF9iAvtLv3JGv7CAyAg+g==";
+      };
+    };
     "lines-and-columns-1.2.4" = {
       name = "lines-and-columns";
       packageName = "lines-and-columns";
@@ -1030,13 +1039,13 @@ let
         sha512 = "dDLF8pEO191hJMtlHFPRa8xsizHaM82MLfNkUHdUtVEV3tgTp5oj+8qbEqYM57SLfc74KSbw//4SeJma2LRVIw==";
       };
     };
-    "postcss-load-config-4.0.1" = {
+    "postcss-load-config-4.0.2" = {
       name = "postcss-load-config";
       packageName = "postcss-load-config";
-      version = "4.0.1";
+      version = "4.0.2";
       src = fetchurl {
-        url = "https://registry.npmjs.org/postcss-load-config/-/postcss-load-config-4.0.1.tgz";
-        sha512 = "vEJIc8RdiBRu3oRAI0ymerOn+7rPuMvRXslTvZUKZonDHFIczxztIyJ1urxM1x9JXEikvpWWTUUqal5j/8QgvA==";
+        url = "https://registry.npmjs.org/postcss-load-config/-/postcss-load-config-4.0.2.tgz";
+        sha512 = "bSVhyJGL00wMVoPUzAVAnbEoWyqRxkjv64tUl427SKnPrENtq6hJwUojroMz2VB+Q1edmi4IfrAPpami5VVgMQ==";
       };
     };
     "postcss-nested-6.0.1" = {
@@ -1569,7 +1578,7 @@ let
       sources."is-number-7.0.0"
       sources."jiti-1.21.0"
       sources."jsonfile-6.1.0"
-      sources."lilconfig-2.1.0"
+      sources."lilconfig-3.0.0"
       sources."lines-and-columns-1.2.4"
       sources."lodash-4.17.21"
       sources."lodash.castarray-4.4.0"
@@ -1598,7 +1607,7 @@ let
       sources."postcss-cli-10.1.0"
       sources."postcss-import-15.1.0"
       sources."postcss-js-4.0.1"
-      sources."postcss-load-config-4.0.1"
+      sources."postcss-load-config-4.0.2"
       (sources."postcss-nested-6.0.1" // {
         dependencies = [
           sources."postcss-selector-parser-6.0.13"
@@ -1630,6 +1639,7 @@ let
         dependencies = [
           sources."arg-5.0.2"
           sources."glob-parent-6.0.2"
+          sources."lilconfig-2.1.0"
           sources."postcss-selector-parser-6.0.13"
         ];
       })
