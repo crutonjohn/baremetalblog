@@ -139,13 +139,13 @@ let
         sha512 = "myfUej5naTBWnqOCc/MdVOLVjXUXtIA+NpDrDBKJtLLg2shUjBu3cZmB/85RyitKc55+lUUyl7oRfLOvkr2hsw==";
       };
     };
-    "@swc/wasm-1.3.97" = {
+    "@swc/wasm-1.3.98" = {
       name = "_at_swc_slash_wasm";
       packageName = "@swc/wasm";
-      version = "1.3.97";
+      version = "1.3.98";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@swc/wasm/-/wasm-1.3.97.tgz";
-        sha512 = "O9p6R6zN1NV1U64eBmU/2NvJGA79W/vUl9BaQwIgoSf2qrPrKMtexDV/aFk2N/mQriWxaK3HHxJAQSPRWsRs+w==";
+        url = "https://registry.npmjs.org/@swc/wasm/-/wasm-1.3.98.tgz";
+        sha512 = "+wKWKUHLl0e30i5usDvJS3MfV2IjLEZQKDjrWZ/JIkzLgmCvygw6aGku0sxBwCynXBuSl36rf2EfmaPn6+yQ6g==";
       };
     };
     "@tailwindcss/typography-0.5.10" = {
@@ -193,13 +193,13 @@ let
         sha512 = "vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==";
       };
     };
-    "@types/node-20.9.2" = {
+    "@types/node-20.9.3" = {
       name = "_at_types_slash_node";
       packageName = "@types/node";
-      version = "20.9.2";
+      version = "20.9.3";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@types/node/-/node-20.9.2.tgz";
-        sha512 = "WHZXKFCEyIUJzAwh3NyyTHYSR35SevJ6mZ1nWwJafKtiQbqRTIKSRcw3Ma3acqgsent3RRDqeVwpHntMk+9irg==";
+        url = "https://registry.npmjs.org/@types/node/-/node-20.9.3.tgz";
+        sha512 = "nk5wXLAXGBKfrhLB0cyHGbSqopS+nz0BUgZkUQqSHSSgdee0kssp1IAqlQOu333bW+gMNs2QREx7iynm19Abxw==";
       };
     };
     "acorn-8.11.2" = {
@@ -1502,13 +1502,13 @@ let
       sources."@swc/counter-0.1.2"
       sources."@swc/helpers-0.5.3"
       sources."@swc/types-0.1.5"
-      sources."@swc/wasm-1.3.97"
+      sources."@swc/wasm-1.3.98"
       sources."@tailwindcss/typography-0.5.10"
       sources."@tsconfig/node10-1.0.9"
       sources."@tsconfig/node12-1.0.11"
       sources."@tsconfig/node14-1.0.3"
       sources."@tsconfig/node16-1.0.4"
-      sources."@types/node-20.9.2"
+      sources."@types/node-20.9.3"
       sources."acorn-8.11.2"
       sources."acorn-walk-8.3.0"
       sources."ansi-regex-5.0.1"
