@@ -553,13 +553,13 @@ let
         sha512 = "ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==";
       };
     };
-    "fs-extra-11.1.1" = {
+    "fs-extra-11.2.0" = {
       name = "fs-extra";
       packageName = "fs-extra";
-      version = "11.1.1";
+      version = "11.2.0";
       src = fetchurl {
-        url = "https://registry.npmjs.org/fs-extra/-/fs-extra-11.1.1.tgz";
-        sha512 = "MGIE4HOvQCeUCzmlHs0vXpih4ysz4wg9qiSAu6cd42lVwPbTM1TjV7RusoyQqMmk/95gdQZX72u+YW+c3eEpFQ==";
+        url = "https://registry.npmjs.org/fs-extra/-/fs-extra-11.2.0.tgz";
+        sha512 = "PmDi3uwK5nFuXh7XDTlVnS17xJS7vW36is2+w3xcv8SVxiB4NyATf4ctkVY5bkSjX0Y4nbvZCq1/EjtEyr9ktw==";
       };
     };
     "fs.realpath-1.0.0" = {
@@ -1551,7 +1551,7 @@ let
       sources."fastq-1.15.0"
       sources."fill-range-7.0.1"
       sources."fraction.js-4.3.7"
-      sources."fs-extra-11.1.1"
+      sources."fs-extra-11.2.0"
       sources."fs.realpath-1.0.0"
       sources."fsevents-2.3.3"
       sources."function-bind-1.1.2"
