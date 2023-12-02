@@ -1003,13 +1003,13 @@ let
         sha512 = "saLsH7WeYYPiD25LDuLRRY/i+6HaPYr6G1OUlN39otzkSTxKnubR9RTxS3/Kk50s1g2JTgFwWQDQyplC5/SHZg==";
       };
     };
-    "postcss-8.4.31" = {
+    "postcss-8.4.32" = {
       name = "postcss";
       packageName = "postcss";
-      version = "8.4.31";
+      version = "8.4.32";
       src = fetchurl {
-        url = "https://registry.npmjs.org/postcss/-/postcss-8.4.31.tgz";
-        sha512 = "PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==";
+        url = "https://registry.npmjs.org/postcss/-/postcss-8.4.32.tgz";
+        sha512 = "D/kj5JNu6oo2EIy+XL/26JEDTlIbB8hw85G8StOE6L74RQAVVP5rej6wxCNqyMbR4RkPfqvezVbPw81Ngd6Kcw==";
       };
     };
     "postcss-cli-10.1.0" = {
@@ -1603,7 +1603,7 @@ let
       sources."picomatch-2.3.1"
       sources."pify-2.3.0"
       sources."pirates-4.0.6"
-      sources."postcss-8.4.31"
+      sources."postcss-8.4.32"
       sources."postcss-cli-10.1.0"
       sources."postcss-import-15.1.0"
       sources."postcss-js-4.0.1"
