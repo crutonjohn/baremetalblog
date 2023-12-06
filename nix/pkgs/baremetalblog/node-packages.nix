@@ -490,13 +490,13 @@ let
         sha512 = "+HlytyjlPKnIG8XuRG8WvmBP8xs8P71y+SKKS6ZXWoEgLuePxtDoUEiH7WkdePWrQ5JBpE6aoVqfZfJUQkjXwA==";
       };
     };
-    "electron-to-chromium-1.4.605" = {
+    "electron-to-chromium-1.4.606" = {
       name = "electron-to-chromium";
       packageName = "electron-to-chromium";
-      version = "1.4.605";
+      version = "1.4.606";
       src = fetchurl {
-        url = "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.605.tgz";
-        sha512 = "V52j+P5z6cdRqTjPR/bYNxx7ETCHIkm5VIGuyCy3CMrfSnbEpIlLnk5oHmZo7gYvDfh2TfHeanB6rawyQ23ktg==";
+        url = "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.606.tgz";
+        sha512 = "Zdv0XuhfyWZUsQ5Uq59d43ZmZOdoGZNWjeN4WCxxlQaP8crAWdnWcTxfHKcaJl6PW2SWpHx6DsxSx7v6KcGCuw==";
       };
     };
     "emoji-regex-8.0.0" = {
@@ -1363,13 +1363,13 @@ let
         sha512 = "AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==";
       };
     };
-    "typescript-5.3.2" = {
+    "typescript-5.3.3" = {
       name = "typescript";
       packageName = "typescript";
-      version = "5.3.2";
+      version = "5.3.3";
       src = fetchurl {
-        url = "https://registry.npmjs.org/typescript/-/typescript-5.3.2.tgz";
-        sha512 = "6l+RyNy7oAHDfxC4FzSJcz9vnjTKxrLpDG5M2Vu4SHRVNg6xzqZp6LYSR9zjqQTu8DU/f5xwxUdADOkbrIX2gQ==";
+        url = "https://registry.npmjs.org/typescript/-/typescript-5.3.3.tgz";
+        sha512 = "pXWcraxM0uxAS+tN0AG/BF2TyqmHO014Z070UsJ+pFvYuRSq8KH8DmWpnbXe0pEPDHXZV3FcAbJkijJ5oNEnWw==";
       };
     };
     "undici-types-5.26.5" = {
@@ -1544,7 +1544,7 @@ let
       sources."diff-4.0.2"
       sources."dir-glob-3.0.1"
       sources."dlv-1.1.3"
-      sources."electron-to-chromium-1.4.605"
+      sources."electron-to-chromium-1.4.606"
       sources."emoji-regex-8.0.0"
       sources."escalade-3.1.1"
       sources."fast-glob-3.3.2"
@@ -1651,7 +1651,7 @@ let
       sources."ts-interface-checker-0.1.13"
       sources."ts-node-10.9.1"
       sources."tslib-2.6.2"
-      sources."typescript-5.3.2"
+      sources."typescript-5.3.3"
       sources."undici-types-5.26.5"
       sources."universalify-2.0.1"
       sources."update-browserslist-db-1.0.13"
