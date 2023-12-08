@@ -1345,13 +1345,13 @@ let
         sha512 = "Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==";
       };
     };
-    "ts-node-10.9.1" = {
+    "ts-node-10.9.2" = {
       name = "ts-node";
       packageName = "ts-node";
-      version = "10.9.1";
+      version = "10.9.2";
       src = fetchurl {
-        url = "https://registry.npmjs.org/ts-node/-/ts-node-10.9.1.tgz";
-        sha512 = "NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==";
+        url = "https://registry.npmjs.org/ts-node/-/ts-node-10.9.2.tgz";
+        sha512 = "f0FFpIdcHgn8zcPSbf1dRevwt047YMnaiJM3u2w2RewrB+fob/zePZcrOyQoLMMO7aBIddLcQIEK5dYjkLnGrQ==";
       };
     };
     "tslib-2.6.2" = {
@@ -1649,7 +1649,7 @@ let
       sources."to-regex-range-5.0.1"
       sources."tree-kill-1.2.2"
       sources."ts-interface-checker-0.1.13"
-      sources."ts-node-10.9.1"
+      sources."ts-node-10.9.2"
       sources."tslib-2.6.2"
       sources."typescript-5.3.3"
       sources."undici-types-5.26.5"
