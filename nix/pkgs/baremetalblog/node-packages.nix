@@ -1138,13 +1138,13 @@ let
         sha512 = "IQ7TZdoaqbT+LCpShg46jnZVlhWD2w6iQYAcYXfHARZ7X1t/UGhhceQDs5X0cGqKvYlHNOuv7Oa1xmb0oQuA3w==";
       };
     };
-    "postcss-selector-parser-6.0.14" = {
+    "postcss-selector-parser-6.0.15" = {
       name = "postcss-selector-parser";
       packageName = "postcss-selector-parser";
-      version = "6.0.14";
+      version = "6.0.15";
       src = fetchurl {
-        url = "https://registry.npmjs.org/postcss-selector-parser/-/postcss-selector-parser-6.0.14.tgz";
-        sha512 = "65xXYsT40i9GyWzlHQ5ShZoK7JZdySeOozi/tz2EezDo6c04q6+ckYMeoY7idaie1qp2dT5KoYQ2yky6JuoHnA==";
+        url = "https://registry.npmjs.org/postcss-selector-parser/-/postcss-selector-parser-6.0.15.tgz";
+        sha512 = "rEYkQOMUCEMhsKbK66tbEU9QVIxbhN18YiniAwA7XQYTVBqrBy+P2p5JcdqsHgKM2zWylp8d7J6eszocfds5Sw==";
       };
     };
     "postcss-value-parser-4.2.0" = {
@@ -1767,7 +1767,7 @@ let
       sources."postcss-load-config-4.0.2"
       (sources."postcss-nested-6.0.1" // {
         dependencies = [
-          sources."postcss-selector-parser-6.0.14"
+          sources."postcss-selector-parser-6.0.15"
         ];
       })
       sources."postcss-reporter-7.0.5"
@@ -1802,7 +1802,7 @@ let
           sources."arg-5.0.2"
           sources."glob-parent-6.0.2"
           sources."lilconfig-2.1.0"
-          sources."postcss-selector-parser-6.0.14"
+          sources."postcss-selector-parser-6.0.15"
         ];
       })
       sources."thenby-1.3.4"
