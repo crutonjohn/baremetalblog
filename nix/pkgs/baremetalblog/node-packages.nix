@@ -112,13 +112,13 @@ let
         sha512 = "oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==";
       };
     };
-    "@swc/core-1.3.101" = {
+    "@swc/core-1.3.102" = {
       name = "_at_swc_slash_core";
       packageName = "@swc/core";
-      version = "1.3.101";
+      version = "1.3.102";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@swc/core/-/core-1.3.101.tgz";
-        sha512 = "w5aQ9qYsd/IYmXADAnkXPGDMTqkQalIi+kfFf/MHRKTpaOL7DHjMXwPp/n8hJ0qNjRvchzmPtOqtPBiER50d8A==";
+        url = "https://registry.npmjs.org/@swc/core/-/core-1.3.102.tgz";
+        sha512 = "OAjNLY/f6QWKSDzaM3bk31A+OYHu6cPa9P/rFIx8X5d24tHXUpRiiq6/PYI6SQRjUPlB72GjsjoEU8F+ALadHg==";
       };
     };
     "@swc/counter-0.1.2" = {
@@ -1652,7 +1652,7 @@ let
       sources."@nodelib/fs.scandir-2.1.5"
       sources."@nodelib/fs.stat-2.0.5"
       sources."@nodelib/fs.walk-1.2.8"
-      sources."@swc/core-1.3.101"
+      sources."@swc/core-1.3.102"
       sources."@swc/counter-0.1.2"
       sources."@swc/helpers-0.5.3"
       sources."@swc/types-0.1.5"
