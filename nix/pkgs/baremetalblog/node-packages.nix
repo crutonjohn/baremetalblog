@@ -364,13 +364,13 @@ let
         sha512 = "QOSvevhslijgYwRx6Rv7zKdMF8lbRmx+uQGx2+vDc+KI/eBnsy9kit5aj23AgGu3pa4t9AgwbnXWqS+iOY+2aA==";
       };
     };
-    "caniuse-lite-1.0.30001572" = {
+    "caniuse-lite-1.0.30001574" = {
       name = "caniuse-lite";
       packageName = "caniuse-lite";
-      version = "1.0.30001572";
+      version = "1.0.30001574";
       src = fetchurl {
-        url = "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001572.tgz";
-        sha512 = "1Pbh5FLmn5y4+QhNyJE9j3/7dK44dGB83/ZMjv/qJk86TvDbjk0LosiZo0i0WB0Vx607qMX9jYrn1VLHCkN4rw==";
+        url = "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001574.tgz";
+        sha512 = "BtYEK4r/iHt/txm81KBudCUcTy7t+s9emrIaHqjYurQ10x71zJ5VQ9x1dYPcz/b+pKSp4y/v1xSI67A+LzpNyg==";
       };
     };
     "chalk-4.1.2" = {
@@ -526,13 +526,13 @@ let
         sha512 = "I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==";
       };
     };
-    "electron-to-chromium-1.4.619" = {
+    "electron-to-chromium-1.4.620" = {
       name = "electron-to-chromium";
       packageName = "electron-to-chromium";
-      version = "1.4.619";
+      version = "1.4.620";
       src = fetchurl {
-        url = "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.619.tgz";
-        sha512 = "gW4qlnHxa49kp9kXlLdvnwdYEUlQRio30QOR61YfOQU8MaC/NGHWiJhyMMUl1EwFHbbzQTxvP1Dypdw95DjIow==";
+        url = "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.620.tgz";
+        sha512 = "a2fcSHOHrqBJsPNXtf6ZCEZpXrFCcbK1FBxfX3txoqWzNgtEDG1f3M59M98iwxhRW4iMKESnSjbJ310/rkrp0g==";
       };
     };
     "emoji-regex-8.0.0" = {
@@ -1677,7 +1677,7 @@ let
       sources."braces-3.0.2"
       sources."browserslist-4.22.2"
       sources."camelcase-css-2.0.1"
-      sources."caniuse-lite-1.0.30001572"
+      sources."caniuse-lite-1.0.30001574"
       (sources."chalk-4.1.2" // {
         dependencies = [
           sources."supports-color-7.2.0"
@@ -1699,7 +1699,7 @@ let
       sources."dir-glob-3.0.1"
       sources."dlv-1.1.3"
       sources."eastasianwidth-0.2.0"
-      sources."electron-to-chromium-1.4.619"
+      sources."electron-to-chromium-1.4.620"
       sources."emoji-regex-8.0.0"
       sources."escalade-3.1.1"
       sources."fast-glob-3.3.2"
