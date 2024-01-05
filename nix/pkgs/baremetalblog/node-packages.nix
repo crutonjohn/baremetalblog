@@ -1408,13 +1408,13 @@ let
         sha512 = "ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==";
       };
     };
-    "tailwindcss-3.4.0" = {
+    "tailwindcss-3.4.1" = {
       name = "tailwindcss";
       packageName = "tailwindcss";
-      version = "3.4.0";
+      version = "3.4.1";
       src = fetchurl {
-        url = "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.4.0.tgz";
-        sha512 = "VigzymniH77knD1dryXbyxR+ePHihHociZbXnLZHUyzf2MMs2ZVqlUrZ3FvpXP8pno9JzmILt1sZPD19M3IxtA==";
+        url = "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.4.1.tgz";
+        sha512 = "qAYmXRfk3ENzuPBakNK0SRrUDipP8NQnEY6772uDhflcQz5EhRdD7JNZxyrFHVQNCwULPBn6FNPp9brpO7ctcA==";
       };
     };
     "thenby-1.3.4" = {
@@ -1797,7 +1797,7 @@ let
       sources."sucrase-3.35.0"
       sources."supports-color-8.1.1"
       sources."supports-preserve-symlinks-flag-1.0.0"
-      (sources."tailwindcss-3.4.0" // {
+      (sources."tailwindcss-3.4.1" // {
         dependencies = [
           sources."arg-5.0.2"
           sources."glob-parent-6.0.2"
