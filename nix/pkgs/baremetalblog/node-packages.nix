@@ -112,13 +112,13 @@ let
         sha512 = "oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==";
       };
     };
-    "@swc/core-1.3.102" = {
+    "@swc/core-1.3.103" = {
       name = "_at_swc_slash_core";
       packageName = "@swc/core";
-      version = "1.3.102";
+      version = "1.3.103";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@swc/core/-/core-1.3.102.tgz";
-        sha512 = "OAjNLY/f6QWKSDzaM3bk31A+OYHu6cPa9P/rFIx8X5d24tHXUpRiiq6/PYI6SQRjUPlB72GjsjoEU8F+ALadHg==";
+        url = "https://registry.npmjs.org/@swc/core/-/core-1.3.103.tgz";
+        sha512 = "PYtt8KzRXIFDwxeD7BA9ylmXNQ4hRVcmDVuAmL3yvL9rgx7Tn3qn6T37wiMVZnP1OjqGyhuHRPNycd+ssr+byw==";
       };
     };
     "@swc/counter-0.1.2" = {
@@ -202,13 +202,13 @@ let
         sha512 = "vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==";
       };
     };
-    "@types/node-20.11.0" = {
+    "@types/node-20.11.1" = {
       name = "_at_types_slash_node";
       packageName = "@types/node";
-      version = "20.11.0";
+      version = "20.11.1";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@types/node/-/node-20.11.0.tgz";
-        sha512 = "o9bjXmDNcF7GbM4CNQpmi+TutCgap/K3w1JyKgxAjqx41zp9qlIAVFi0IhCNsJcXolEqLWhbFbEeL0PvYm4pcQ==";
+        url = "https://registry.npmjs.org/@types/node/-/node-20.11.1.tgz";
+        sha512 = "DsXojJUES2M+FE8CpptJTKpg+r54moV9ZEncPstni1WHFmTcCzeFLnMFfyhCVS8XNOy/OQG+8lVxRLRrVHmV5A==";
       };
     };
     "acorn-8.11.3" = {
@@ -1652,7 +1652,7 @@ let
       sources."@nodelib/fs.scandir-2.1.5"
       sources."@nodelib/fs.stat-2.0.5"
       sources."@nodelib/fs.walk-1.2.8"
-      sources."@swc/core-1.3.102"
+      sources."@swc/core-1.3.103"
       sources."@swc/counter-0.1.2"
       sources."@swc/helpers-0.5.3"
       sources."@swc/types-0.1.5"
@@ -1662,7 +1662,7 @@ let
       sources."@tsconfig/node12-1.0.11"
       sources."@tsconfig/node14-1.0.3"
       sources."@tsconfig/node16-1.0.4"
-      sources."@types/node-20.11.0"
+      sources."@types/node-20.11.1"
       sources."acorn-8.11.3"
       sources."acorn-walk-8.3.2"
       sources."ansi-regex-5.0.1"
