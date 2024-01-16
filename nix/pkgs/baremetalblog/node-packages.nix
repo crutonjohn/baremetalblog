@@ -1120,13 +1120,13 @@ let
         sha512 = "mEp4xPMi5bSWiMbsgoPfcP74lsWLHkQbZc3sY+jWYd65CUwXrUaTp0fmNpa01ZcETKlIgUdFN/MpS2xZtqL9dQ==";
       };
     };
-    "postcss-reporter-7.0.5" = {
+    "postcss-reporter-7.1.0" = {
       name = "postcss-reporter";
       packageName = "postcss-reporter";
-      version = "7.0.5";
+      version = "7.1.0";
       src = fetchurl {
-        url = "https://registry.npmjs.org/postcss-reporter/-/postcss-reporter-7.0.5.tgz";
-        sha512 = "glWg7VZBilooZGOFPhN9msJ3FQs19Hie7l5a/eE6WglzYqVeH3ong3ShFcp9kDWJT1g2Y/wd59cocf9XxBtkWA==";
+        url = "https://registry.npmjs.org/postcss-reporter/-/postcss-reporter-7.1.0.tgz";
+        sha512 = "/eoEylGWyy6/DOiMP5lmFRdmDKThqgn7D6hP2dXKJI/0rJSO1ADFNngZfDzxL0YAxFvws+Rtpuji1YIHj4mySA==";
       };
     };
     "postcss-selector-parser-6.0.10" = {
@@ -1770,7 +1770,7 @@ let
           sources."postcss-selector-parser-6.0.15"
         ];
       })
-      sources."postcss-reporter-7.0.5"
+      sources."postcss-reporter-7.1.0"
       sources."postcss-selector-parser-6.0.10"
       sources."postcss-value-parser-4.2.0"
       sources."pretty-hrtime-1.0.3"
