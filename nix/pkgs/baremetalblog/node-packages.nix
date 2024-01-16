@@ -526,13 +526,13 @@ let
         sha512 = "I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==";
       };
     };
-    "electron-to-chromium-1.4.630" = {
+    "electron-to-chromium-1.4.631" = {
       name = "electron-to-chromium";
       packageName = "electron-to-chromium";
-      version = "1.4.630";
+      version = "1.4.631";
       src = fetchurl {
-        url = "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.630.tgz";
-        sha512 = "osHqhtjojpCsACVnuD11xO5g9xaCyw7Qqn/C2KParkMv42i8jrJJgx3g7mkHfpxwhy9MnOJr8+pKOdZ7qzgizg==";
+        url = "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.631.tgz";
+        sha512 = "g73CJB/rMPjdxpiNJYmV1homV7mLVUNe/R0z/HhqMfpjkt58FpYmkTjbtuv3zymdbTTJ+VOEqe1c+lkTjSOhmQ==";
       };
     };
     "emoji-regex-8.0.0" = {
@@ -1699,7 +1699,7 @@ let
       sources."dir-glob-3.0.1"
       sources."dlv-1.1.3"
       sources."eastasianwidth-0.2.0"
-      sources."electron-to-chromium-1.4.630"
+      sources."electron-to-chromium-1.4.631"
       sources."emoji-regex-8.0.0"
       sources."escalade-3.1.1"
       sources."fast-glob-3.3.2"
