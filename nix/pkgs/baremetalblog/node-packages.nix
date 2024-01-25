@@ -877,13 +877,13 @@ let
         sha512 = "0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==";
       };
     };
-    "lru-cache-10.1.0" = {
+    "lru-cache-10.2.0" = {
       name = "lru-cache";
       packageName = "lru-cache";
-      version = "10.1.0";
+      version = "10.2.0";
       src = fetchurl {
-        url = "https://registry.npmjs.org/lru-cache/-/lru-cache-10.1.0.tgz";
-        sha512 = "/1clY/ui8CzjKFyjdvwPWJUYKiFVXG2I2cY0ssG7h4+hwk+XOIX7ZSG9Q7TW8TW3Kp3BUSqgFWBLgL4PJ+Blag==";
+        url = "https://registry.npmjs.org/lru-cache/-/lru-cache-10.2.0.tgz";
+        sha512 = "2bIM8x+VAf6JT4bKAljS1qUWgMsqZRPGJS6FSahIMPVvctcNhyVp7AJu7quxOW9jwkryBReKZY5tY5JYv2n/7Q==";
       };
     };
     "make-error-1.3.6" = {
@@ -1739,7 +1739,7 @@ let
       sources."lodash.castarray-4.4.0"
       sources."lodash.isplainobject-4.0.6"
       sources."lodash.merge-4.6.2"
-      sources."lru-cache-10.1.0"
+      sources."lru-cache-10.2.0"
       sources."make-error-1.3.6"
       sources."merge2-1.4.1"
       sources."micromatch-4.0.5"
