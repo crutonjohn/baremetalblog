@@ -112,13 +112,13 @@ let
         sha512 = "oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==";
       };
     };
-    "@swc/core-1.3.105" = {
+    "@swc/core-1.3.106" = {
       name = "_at_swc_slash_core";
       packageName = "@swc/core";
-      version = "1.3.105";
+      version = "1.3.106";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@swc/core/-/core-1.3.105.tgz";
-        sha512 = "me2VZyr3OjqRpFrYQJJYy7x/zbFSl9nt+MAGnIcBtjDsN00iTVqEaKxBjPBFQV9BDAgPz2SRWes/DhhVm5SmMw==";
+        url = "https://registry.npmjs.org/@swc/core/-/core-1.3.106.tgz";
+        sha512 = "++QPSPkFq2qELYVScxNHJC42hKQChjiTWS2P0QQ5JWT4NHb9lmNSfrc1ylFIyImwRnxsW2MTBALLYLf95EFAsg==";
       };
     };
     "@swc/counter-0.1.2" = {
@@ -364,13 +364,13 @@ let
         sha512 = "QOSvevhslijgYwRx6Rv7zKdMF8lbRmx+uQGx2+vDc+KI/eBnsy9kit5aj23AgGu3pa4t9AgwbnXWqS+iOY+2aA==";
       };
     };
-    "caniuse-lite-1.0.30001579" = {
+    "caniuse-lite-1.0.30001580" = {
       name = "caniuse-lite";
       packageName = "caniuse-lite";
-      version = "1.0.30001579";
+      version = "1.0.30001580";
       src = fetchurl {
-        url = "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001579.tgz";
-        sha512 = "u5AUVkixruKHJjw/pj9wISlcMpgFWzSrczLZbrqBSxukQixmg0SJ5sZTpvaFvxU0HoQKd4yoyAogyrAz9pzJnA==";
+        url = "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001580.tgz";
+        sha512 = "mtj5ur2FFPZcCEpXFy8ADXbDACuNFXg6mxVDqp7tqooX6l3zwm+d8EPoeOSIFRDvHs8qu7/SLFOGniULkcH2iA==";
       };
     };
     "chalk-4.1.2" = {
@@ -1652,7 +1652,7 @@ let
       sources."@nodelib/fs.scandir-2.1.5"
       sources."@nodelib/fs.stat-2.0.5"
       sources."@nodelib/fs.walk-1.2.8"
-      sources."@swc/core-1.3.105"
+      sources."@swc/core-1.3.106"
       sources."@swc/counter-0.1.2"
       sources."@swc/helpers-0.5.3"
       sources."@swc/types-0.1.5"
@@ -1677,7 +1677,7 @@ let
       sources."braces-3.0.2"
       sources."browserslist-4.22.2"
       sources."camelcase-css-2.0.1"
-      sources."caniuse-lite-1.0.30001579"
+      sources."caniuse-lite-1.0.30001580"
       (sources."chalk-4.1.2" // {
         dependencies = [
           sources."supports-color-7.2.0"
