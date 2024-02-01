@@ -715,13 +715,13 @@ let
         sha512 = "vUptKVTpIJhcczKBbgnS+RtcuYMB8+oNzPK2/Hp3hanz8JmpATdmmgLgSaadVREkDm+e2giHwY3ZRkyjSIDDFA==";
       };
     };
-    "ignore-5.3.0" = {
+    "ignore-5.3.1" = {
       name = "ignore";
       packageName = "ignore";
-      version = "5.3.0";
+      version = "5.3.1";
       src = fetchurl {
-        url = "https://registry.npmjs.org/ignore/-/ignore-5.3.0.tgz";
-        sha512 = "g7dmpshy+gD7mh88OC9NwSGTKoc3kyLAZQRU1mt53Aw/vnvfXnbC+F/7F7QoYVKbV+KNvJx8wArewKy1vXMtlg==";
+        url = "https://registry.npmjs.org/ignore/-/ignore-5.3.1.tgz";
+        sha512 = "5Fytz/IraMjqpwfd34ke28PTVMjZjJG2MPn5t7OE4eUCUNf8BAa7b5WUS9/Qvr6mwOQS7Mk6vdsMno5he+T8Xw==";
       };
     };
     "is-binary-path-2.1.0" = {
@@ -1722,7 +1722,7 @@ let
       sources."graceful-fs-4.2.11"
       sources."has-flag-4.0.0"
       sources."hasown-2.0.0"
-      sources."ignore-5.3.0"
+      sources."ignore-5.3.1"
       sources."is-binary-path-2.1.0"
       sources."is-core-module-2.13.1"
       sources."is-extglob-2.1.1"
