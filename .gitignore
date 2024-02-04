@@ -5,3 +5,4 @@ resources/
 content/post/staging/
 result/
 result*/
+node_modules/
