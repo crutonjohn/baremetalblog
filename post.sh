@@ -9,5 +9,5 @@ DATE="$(date +"%F")"
 SLUG="$DATE-$TITLE_SLUG"
 
 git checkout -b "$SLUG"
-hugo new --kind $BUNDLE posts/$OUT_PATH/$SLUG
+hugo new --kind $BUNDLE post/$OUT_PATH/$SLUG
 
