@@ -14,7 +14,35 @@ timeout = 30000
 paginator_pages = "5"
 
 # Enable this if you want the archive list to be in a drop-down format.
-archive_dropdown = "false"
+archive_dropdown = "true"
+
+# Default to dark mode
+darkmode = "dark"
+
+  [params.post]
+    # Show thumbnails
+    thumbnail = true
+
+    # Disable the "NO IMAGE" image.
+    noimage = false
+
+    # See the Tailwind CSS documentation to set it up.
+    # Recommended settings are h-32 to h-48.
+    # https://tailwindcss.com/docs/height
+    thumbnail_height = "lg:h-44"
+
+    # https://tailwindcss.com/docs/width
+    thumbnail_width = "lg:w-auto"
+
+    # Number of characters in description
+    description = "130"
+
+  [params.widgets]
+    # Display widgets
+    display = true
+
+    # Order of widgets to display
+    widgets = ["search", "archive", "category", "tags", "recent"]
 
 [menu]
   [[menu.main]]
