@@ -148,13 +148,13 @@ let
         sha512 = "myfUej5naTBWnqOCc/MdVOLVjXUXtIA+NpDrDBKJtLLg2shUjBu3cZmB/85RyitKc55+lUUyl7oRfLOvkr2hsw==";
       };
     };
-    "@swc/wasm-1.3.107" = {
+    "@swc/wasm-1.4.0" = {
       name = "_at_swc_slash_wasm";
       packageName = "@swc/wasm";
-      version = "1.3.107";
+      version = "1.4.0";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@swc/wasm/-/wasm-1.3.107.tgz";
-        sha512 = "mfe9FszpVT+5JA5brGQ5PwkLoDXsZeh8tyO2/rKqMjKQW0tqZP/npkVgD9yUMC/eXLM2TmnjeYZAPpTreSPBBQ==";
+        url = "https://registry.npmjs.org/@swc/wasm/-/wasm-1.4.0.tgz";
+        sha512 = "7O27J0FV0uB/EHqGCSuusPNVS7oO5S03eENFJvvRb4ojOWny6/MuErkkgZZlV34/3WhfPVfxX+O6ijTEALePJA==";
       };
     };
     "@tailwindcss/typography-0.5.10" = {
@@ -364,13 +364,13 @@ let
         sha512 = "QOSvevhslijgYwRx6Rv7zKdMF8lbRmx+uQGx2+vDc+KI/eBnsy9kit5aj23AgGu3pa4t9AgwbnXWqS+iOY+2aA==";
       };
     };
-    "caniuse-lite-1.0.30001583" = {
+    "caniuse-lite-1.0.30001584" = {
       name = "caniuse-lite";
       packageName = "caniuse-lite";
-      version = "1.0.30001583";
+      version = "1.0.30001584";
       src = fetchurl {
-        url = "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001583.tgz";
-        sha512 = "acWTYaha8xfhA/Du/z4sNZjHUWjkiuoAi2LM+T/aL+kemKQgPT1xBb/YKjlQ0Qo8gvbHsGNplrEJ+9G3gL7i4Q==";
+        url = "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001584.tgz";
+        sha512 = "LOz7CCQ9M1G7OjJOF9/mzmqmj3jE/7VOmrfw6Mgs0E8cjOsbRXQJHsPBfmBOXDskXKrHLyyW3n7kpDW/4BsfpQ==";
       };
     };
     "chalk-4.1.2" = {
@@ -1656,7 +1656,7 @@ let
       sources."@swc/counter-0.1.2"
       sources."@swc/helpers-0.5.3"
       sources."@swc/types-0.1.5"
-      sources."@swc/wasm-1.3.107"
+      sources."@swc/wasm-1.4.0"
       sources."@tailwindcss/typography-0.5.10"
       sources."@tsconfig/node10-1.0.9"
       sources."@tsconfig/node12-1.0.11"
@@ -1677,7 +1677,7 @@ let
       sources."braces-3.0.2"
       sources."browserslist-4.22.3"
       sources."camelcase-css-2.0.1"
-      sources."caniuse-lite-1.0.30001583"
+      sources."caniuse-lite-1.0.30001584"
       (sources."chalk-4.1.2" // {
         dependencies = [
           sources."supports-color-7.2.0"
