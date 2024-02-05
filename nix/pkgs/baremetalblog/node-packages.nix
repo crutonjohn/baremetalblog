@@ -112,31 +112,31 @@ let
         sha512 = "oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==";
       };
     };
-    "@swc/core-1.3.107" = {
+    "@swc/core-1.4.0" = {
       name = "_at_swc_slash_core";
       packageName = "@swc/core";
-      version = "1.3.107";
+      version = "1.4.0";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@swc/core/-/core-1.3.107.tgz";
-        sha512 = "zKhqDyFcTsyLIYK1iEmavljZnf4CCor5pF52UzLAz4B6Nu/4GLU+2LQVAf+oRHjusG39PTPjd2AlRT3f3QWfsQ==";
+        url = "https://registry.npmjs.org/@swc/core/-/core-1.4.0.tgz";
+        sha512 = "wc5DMI5BJftnK0Fyx9SNJKkA0+BZSJQx8430yutWmsILkHMBD3Yd9GhlMaxasab9RhgKqZp7Ht30hUYO5ZDvQg==";
       };
     };
-    "@swc/counter-0.1.2" = {
+    "@swc/counter-0.1.3" = {
       name = "_at_swc_slash_counter";
       packageName = "@swc/counter";
-      version = "0.1.2";
+      version = "0.1.3";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@swc/counter/-/counter-0.1.2.tgz";
-        sha512 = "9F4ys4C74eSTEUNndnER3VJ15oru2NumfQxS8geE+f3eB5xvfxpWyqE5XlVnxb/R14uoXi6SLbBwwiDSkv+XEw==";
+        url = "https://registry.npmjs.org/@swc/counter/-/counter-0.1.3.tgz";
+        sha512 = "e2BR4lsJkkRlKZ/qCHPw9ZaSxc0MVUd7gtbtaB7aMvHeJVYe8sOB8DBZkP2DtISHGSku9sCK6T6cnY0CtXrOCQ==";
       };
     };
-    "@swc/helpers-0.5.3" = {
+    "@swc/helpers-0.5.5" = {
       name = "_at_swc_slash_helpers";
       packageName = "@swc/helpers";
-      version = "0.5.3";
+      version = "0.5.5";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@swc/helpers/-/helpers-0.5.3.tgz";
-        sha512 = "FaruWX6KdudYloq1AHD/4nU+UsMTdNE8CKyrseXWEcgjDAbvkwJg2QGPAnfIJLIWsjZOSPLOAykK6fuYp4vp4A==";
+        url = "https://registry.npmjs.org/@swc/helpers/-/helpers-0.5.5.tgz";
+        sha512 = "KGYxvIOXcceOAbEk4bi/dVLEK9z8sZ0uBB3Il5b1rhfClSpcX0yfRO0KmTkqR2cnQDymwLB+25ZyMzICg/cm/A==";
       };
     };
     "@swc/types-0.1.5" = {
@@ -1652,9 +1652,9 @@ let
       sources."@nodelib/fs.scandir-2.1.5"
       sources."@nodelib/fs.stat-2.0.5"
       sources."@nodelib/fs.walk-1.2.8"
-      sources."@swc/core-1.3.107"
-      sources."@swc/counter-0.1.2"
-      sources."@swc/helpers-0.5.3"
+      sources."@swc/core-1.4.0"
+      sources."@swc/counter-0.1.3"
+      sources."@swc/helpers-0.5.5"
       sources."@swc/types-0.1.5"
       sources."@swc/wasm-1.4.0"
       sources."@tailwindcss/typography-0.5.10"
