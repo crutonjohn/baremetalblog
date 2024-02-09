@@ -9,6 +9,8 @@ enableRobotsTXT = true
 enableEmoji = true
 timeout = 30000
 
+googleAnalytics = "G-GMJQDE9153"
+
 [params]
 # The number of articles to be displayed on a single page.
 paginator_pages = "5"
