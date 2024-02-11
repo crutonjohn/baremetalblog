@@ -697,13 +697,13 @@ let
         sha512 = "EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==";
       };
     };
-    "hasown-2.0.0" = {
+    "hasown-2.0.1" = {
       name = "hasown";
       packageName = "hasown";
-      version = "2.0.0";
+      version = "2.0.1";
       src = fetchurl {
-        url = "https://registry.npmjs.org/hasown/-/hasown-2.0.0.tgz";
-        sha512 = "vUptKVTpIJhcczKBbgnS+RtcuYMB8+oNzPK2/Hp3hanz8JmpATdmmgLgSaadVREkDm+e2giHwY3ZRkyjSIDDFA==";
+        url = "https://registry.npmjs.org/hasown/-/hasown-2.0.1.tgz";
+        sha512 = "1/th4MHjnwncwXsIW6QMzlvYL9kG5e/CpVvLRZe4XPa8TOUNbCELqmvhDmnkNsAjwaG4+I8gJJL0JBvTTLO9qA==";
       };
     };
     "ignore-5.3.1" = {
@@ -1711,7 +1711,7 @@ let
       })
       sources."graceful-fs-4.2.11"
       sources."has-flag-4.0.0"
-      sources."hasown-2.0.0"
+      sources."hasown-2.0.1"
       sources."ignore-5.3.1"
       sources."is-binary-path-2.1.0"
       sources."is-core-module-2.13.1"
