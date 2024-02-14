@@ -346,13 +346,13 @@ let
         sha512 = "b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+lBQpZMP1k8l+78Ha0A==";
       };
     };
-    "browserslist-4.22.3" = {
+    "browserslist-4.23.0" = {
       name = "browserslist";
       packageName = "browserslist";
-      version = "4.22.3";
+      version = "4.23.0";
       src = fetchurl {
-        url = "https://registry.npmjs.org/browserslist/-/browserslist-4.22.3.tgz";
-        sha512 = "UAp55yfwNv0klWNapjs/ktHoguxuQNGnOzxYmfnXIS+8AsRDZkSDxg7R1AX3GKzn078SBI5dzwzj/Yx0Or0e3A==";
+        url = "https://registry.npmjs.org/browserslist/-/browserslist-4.23.0.tgz";
+        sha512 = "QW8HiM1shhT2GuzkvklfjcKDiWFXHOeFCIA/huJPwHsslwcydgk7X+z2zXpEijP98UCY7HbubZt5J2Zgvf0CaQ==";
       };
     };
     "camelcase-css-2.0.1" = {
@@ -1666,7 +1666,7 @@ let
       sources."binary-extensions-2.2.0"
       sources."brace-expansion-2.0.1"
       sources."braces-3.0.2"
-      sources."browserslist-4.22.3"
+      sources."browserslist-4.23.0"
       sources."camelcase-css-2.0.1"
       sources."caniuse-lite-1.0.30001587"
       (sources."chalk-4.1.2" // {
