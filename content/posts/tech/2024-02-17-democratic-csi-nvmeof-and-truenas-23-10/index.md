@@ -1,5 +1,5 @@
 ---
-title: Democratic CSI NVMEof and TrueNAS 23.10
+title: "A Bug with Democratic CSI, NVMEof, and TrueNAS 23.10"
 summary: "A patch to get NVMEoF working on TrueNAS 23.10"
 description: "Breaking News: Upgrades can break stuff"
 date: 2024-02-17
@@ -16,9 +16,9 @@ tags:
   - nvmeof
 ---
 
-A recent upgrade I made to jump from TrueNAS SCALE version 22 "Bluefin" to version 23 "Cobia" wound up breaking my NVMEoF storage. I use Democratic CSI in my Kubernetes cluster to orchestrate creating NVMEoF volumes and attaching them to pods for PVCs. Democratic CSI can create a block volume in TrueNAS, add that volume to the running NVMEoF config, and ultimately do all the wiring within your cluster.
+A recent upgrade I made to jump from [TrueNAS SCALE](https://www.truenas.com/truenas-scale/) version 22 "Bluefin" to version 23 "Cobia" wound up breaking my [NVMEoF](https://nvmexpress.org/specification/nvme-of-specification/) storage. I use [Democratic CSI](https://github.com/democratic-csi/democratic-csi) in my Kubernetes cluster to orchestrate creating NVMEoF volumes and attaching them to pods for PVCs. Democratic CSI can create a block volume in TrueNAS, add that volume to the running NVMEoF config, and ultimately do all the wiring within your cluster.
 
-Democratic CSI distributes a bash script mean to run on your TrueNAS server which gets executed after the system boots. The script sets up NVMEoF and imports a config file containing your volumes. This script relies on Python to set up the NVMEoF client library. As a part of the changes introduced in TrueNAS 23.10 (I didn't read the patch notes) something changed with the underlying system's Python installation. This caused the script provided by Democratic CSI to stop workin altogether.
+Democratic CSI distributes a [bash script](https://github.com/democratic-csi/democratic-csi/blob/10af6c639b430af106be3ea769fcaddec1e5e9d3/contrib/scale-nvmet-start.sh) mean to run on your TrueNAS server which gets executed after the system boots. The script sets up NVMEoF and imports a config file containing your volumes. This script relies on Python to set up the NVMEoF client library. As a part of the changes introduced in TrueNAS 23.10 (I didn't read the patch notes) something changed with the underlying system's Python installation. This caused the script provided by Democratic CSI to stop workin altogether.
 
 I figured out how to get this working again using some very creative Python virtual environment stuff, as well as breaking the script up into various functions:
 
