@@ -814,13 +814,13 @@ let
         sha512 = "utWOt/GHzuUxnLKxB6dk81RoOeoNeHgbrXiuGk4yyF5qlRz+iIVWu56E2fqGHFrXz0QNUhLB/8nKqvRH66JKGQ==";
       };
     };
-    "lilconfig-3.1.0" = {
+    "lilconfig-3.1.1" = {
       name = "lilconfig";
       packageName = "lilconfig";
-      version = "3.1.0";
+      version = "3.1.1";
       src = fetchurl {
-        url = "https://registry.npmjs.org/lilconfig/-/lilconfig-3.1.0.tgz";
-        sha512 = "p3cz0JV5vw/XeouBU3Ldnp+ZkBjE+n8ydJ4mcwBrOiXXPqNlrzGBqWs9X4MWF7f+iKUBu794Y8Hh8yawiJbCjw==";
+        url = "https://registry.npmjs.org/lilconfig/-/lilconfig-3.1.1.tgz";
+        sha512 = "O18pf7nyvHTckunPWCV1XUNXU1piu01y2b7ATJ0ppkUkk8ocqVWBrYjJBCwHDjD/ZWcfyrA0P4gKhzWGi5EINQ==";
       };
     };
     "lines-and-columns-1.2.4" = {
@@ -1723,7 +1723,7 @@ let
       sources."jackspeak-2.3.6"
       sources."jiti-1.21.0"
       sources."jsonfile-6.1.0"
-      sources."lilconfig-3.1.0"
+      sources."lilconfig-3.1.1"
       sources."lines-and-columns-1.2.4"
       sources."lodash-4.17.21"
       sources."lodash.castarray-4.4.0"
