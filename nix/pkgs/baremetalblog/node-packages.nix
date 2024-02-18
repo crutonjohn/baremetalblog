@@ -364,13 +364,13 @@ let
         sha512 = "QOSvevhslijgYwRx6Rv7zKdMF8lbRmx+uQGx2+vDc+KI/eBnsy9kit5aj23AgGu3pa4t9AgwbnXWqS+iOY+2aA==";
       };
     };
-    "caniuse-lite-1.0.30001587" = {
+    "caniuse-lite-1.0.30001588" = {
       name = "caniuse-lite";
       packageName = "caniuse-lite";
-      version = "1.0.30001587";
+      version = "1.0.30001588";
       src = fetchurl {
-        url = "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001587.tgz";
-        sha512 = "HMFNotUmLXn71BQxg8cijvqxnIAofforZOwGsxyXJ0qugTdspUF4sPSJ2vhgprHCB996tIDzEq1ubumPDV8ULA==";
+        url = "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001588.tgz";
+        sha512 = "+hVY9jE44uKLkH0SrUTqxjxqNTOWHsbnQDIKjwkZ3lNTzUUVdBLBGXtj/q5Mp5u98r3droaZAewQuEDzjQdZlQ==";
       };
     };
     "chalk-4.1.2" = {
@@ -1668,7 +1668,7 @@ let
       sources."braces-3.0.2"
       sources."browserslist-4.23.0"
       sources."camelcase-css-2.0.1"
-      sources."caniuse-lite-1.0.30001587"
+      sources."caniuse-lite-1.0.30001588"
       (sources."chalk-4.1.2" // {
         dependencies = [
           sources."supports-color-7.2.0"
