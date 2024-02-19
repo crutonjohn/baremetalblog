@@ -148,13 +148,13 @@ let
         sha512 = "myfUej5naTBWnqOCc/MdVOLVjXUXtIA+NpDrDBKJtLLg2shUjBu3cZmB/85RyitKc55+lUUyl7oRfLOvkr2hsw==";
       };
     };
-    "@swc/wasm-1.4.1" = {
+    "@swc/wasm-1.4.2" = {
       name = "_at_swc_slash_wasm";
       packageName = "@swc/wasm";
-      version = "1.4.1";
+      version = "1.4.2";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@swc/wasm/-/wasm-1.4.1.tgz";
-        sha512 = "T9wbyNM9pZNxE5aJR+dZAMhKVKSElw9Clz73pjFEV2ddB5DHmi4ndn1X3RwCF8JBryVkoPIsZ/MQXty+LSbyQw==";
+        url = "https://registry.npmjs.org/@swc/wasm/-/wasm-1.4.2.tgz";
+        sha512 = "RUaujFapRSVcQAhxp1AV4+TUKK6tIYW7++rvYmfxwUjypjPE9zzJCgSylbhlhFHf6rVcx0h/+IbnrbyENITq8g==";
       };
     };
     "@tailwindcss/typography-0.5.10" = {
@@ -1647,7 +1647,7 @@ let
       sources."@swc/counter-0.1.3"
       sources."@swc/helpers-0.5.6"
       sources."@swc/types-0.1.5"
-      sources."@swc/wasm-1.4.1"
+      sources."@swc/wasm-1.4.2"
       sources."@tailwindcss/typography-0.5.10"
       sources."@tsconfig/node10-1.0.9"
       sources."@tsconfig/node12-1.0.11"
