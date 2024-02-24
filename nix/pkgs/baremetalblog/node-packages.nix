@@ -40,13 +40,13 @@ let
         sha512 = "O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==";
       };
     };
-    "@jridgewell/gen-mapping-0.3.3" = {
+    "@jridgewell/gen-mapping-0.3.4" = {
       name = "_at_jridgewell_slash_gen-mapping";
       packageName = "@jridgewell/gen-mapping";
-      version = "0.3.3";
+      version = "0.3.4";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@jridgewell/gen-mapping/-/gen-mapping-0.3.3.tgz";
-        sha512 = "HLhSWOLRi875zjjMG/r+Nv0oCW8umGb0BgEhyX3dDX3egwZtB8PqLnjz3yedt8R5StBrzcg4aBpnh8UA9D1BoQ==";
+        url = "https://registry.npmjs.org/@jridgewell/gen-mapping/-/gen-mapping-0.3.4.tgz";
+        sha512 = "Oud2QPM5dHviZNn4y/WhhYKSXksv+1xLEIsNrAbGcFzUN3ubqWRFT5gwPchNc5NuzILOU4tPBDTZ4VwhL8Y7cw==";
       };
     };
     "@jridgewell/resolve-uri-3.1.2" = {
@@ -1635,7 +1635,7 @@ let
           sources."wrap-ansi-8.1.0"
         ];
       })
-      sources."@jridgewell/gen-mapping-0.3.3"
+      sources."@jridgewell/gen-mapping-0.3.4"
       sources."@jridgewell/resolve-uri-3.1.2"
       sources."@jridgewell/set-array-1.1.2"
       sources."@jridgewell/sourcemap-codec-1.4.15"
