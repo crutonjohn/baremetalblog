@@ -1579,13 +1579,13 @@ let
         sha512 = "0pfFzegeDWJHJIAmTLRP2DwHjdF5s7jo9tuztdQxAhINCdvS+3nGINqPd00AphqJR/0LhANUS6/+7SCb98YOfA==";
       };
     };
-    "yaml-2.3.4" = {
+    "yaml-2.4.0" = {
       name = "yaml";
       packageName = "yaml";
-      version = "2.3.4";
+      version = "2.4.0";
       src = fetchurl {
-        url = "https://registry.npmjs.org/yaml/-/yaml-2.3.4.tgz";
-        sha512 = "8aAvwVUSHpfEqTQ4w/KMlf3HcRdt50E5ODIQJBw1fQ5RL34xabzxtUlzTXVqc4rkZsPbvrXKWnABCD7kWSmocA==";
+        url = "https://registry.npmjs.org/yaml/-/yaml-2.4.0.tgz";
+        sha512 = "j9iR8g+/t0lArF4V6NE/QCfT+CO7iLqrXAHZbJdo+LfjqP1vR8Fg5bSiaq6Q2lOD1AUEVrEVIgABvBFYojJVYQ==";
       };
     };
     "yargs-17.7.2" = {
@@ -1813,7 +1813,7 @@ let
       sources."wrap-ansi-7.0.0"
       sources."wrap-ansi-cjs-7.0.0"
       sources."y18n-5.0.8"
-      sources."yaml-2.3.4"
+      sources."yaml-2.4.0"
       sources."yargs-17.7.2"
       sources."yargs-parser-21.1.1"
       sources."yn-3.1.1"
