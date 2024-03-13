@@ -211,13 +211,13 @@ let
         sha512 = "vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==";
       };
     };
-    "@types/node-20.11.26" = {
+    "@types/node-20.11.27" = {
       name = "_at_types_slash_node";
       packageName = "@types/node";
-      version = "20.11.26";
+      version = "20.11.27";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@types/node/-/node-20.11.26.tgz";
-        sha512 = "YwOMmyhNnAWijOBQweOJnQPl068Oqd4K3OFbTc6AHJwzweUwwWG3GIFY74OKks2PJUDkQPeddOQES9mLn1CTEQ==";
+        url = "https://registry.npmjs.org/@types/node/-/node-20.11.27.tgz";
+        sha512 = "qyUZfMnCg1KEz57r7pzFtSGt49f6RPkPBis3Vo4PbS7roQEDn22hiHzl/Lo1q4i4hDEgBJmBF/NTNg2XR0HbFg==";
       };
     };
     "acorn-8.11.3" = {
@@ -1138,13 +1138,13 @@ let
         sha512 = "IQ7TZdoaqbT+LCpShg46jnZVlhWD2w6iQYAcYXfHARZ7X1t/UGhhceQDs5X0cGqKvYlHNOuv7Oa1xmb0oQuA3w==";
       };
     };
-    "postcss-selector-parser-6.0.15" = {
+    "postcss-selector-parser-6.0.16" = {
       name = "postcss-selector-parser";
       packageName = "postcss-selector-parser";
-      version = "6.0.15";
+      version = "6.0.16";
       src = fetchurl {
-        url = "https://registry.npmjs.org/postcss-selector-parser/-/postcss-selector-parser-6.0.15.tgz";
-        sha512 = "rEYkQOMUCEMhsKbK66tbEU9QVIxbhN18YiniAwA7XQYTVBqrBy+P2p5JcdqsHgKM2zWylp8d7J6eszocfds5Sw==";
+        url = "https://registry.npmjs.org/postcss-selector-parser/-/postcss-selector-parser-6.0.16.tgz";
+        sha512 = "A0RVJrX+IUkVZbW3ClroRWurercFhieevHB38sr2+l9eUClMqome3LmEmnhlNy+5Mr2EYN6B2Kaw9wYdd+VHiw==";
       };
     };
     "postcss-value-parser-4.2.0" = {
@@ -1666,7 +1666,7 @@ let
       sources."@tsconfig/node12-1.0.11"
       sources."@tsconfig/node14-1.0.3"
       sources."@tsconfig/node16-1.0.4"
-      sources."@types/node-20.11.26"
+      sources."@types/node-20.11.27"
       sources."acorn-8.11.3"
       sources."acorn-walk-8.3.2"
       sources."ansi-regex-5.0.1"
@@ -1770,7 +1770,7 @@ let
       sources."postcss-load-config-4.0.2"
       (sources."postcss-nested-6.0.1" // {
         dependencies = [
-          sources."postcss-selector-parser-6.0.15"
+          sources."postcss-selector-parser-6.0.16"
         ];
       })
       sources."postcss-reporter-7.1.0"
@@ -1805,7 +1805,7 @@ let
           sources."arg-5.0.2"
           sources."glob-parent-6.0.2"
           sources."lilconfig-2.1.0"
-          sources."postcss-selector-parser-6.0.15"
+          sources."postcss-selector-parser-6.0.16"
         ];
       })
       sources."thenby-1.3.4"
