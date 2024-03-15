@@ -1,16 +1,14 @@
-+++
-title = "about"
-description = ""
-date = "2021-01-07"
-aliases = ["about-us", "about-me", "contact"]
-author = "Curtis John"
-+++
+---
+title: "about"
+description: ""
+aliases: ["about-us", "about-me", "contact"]
+---
 
-I am a father, Site Reliability Engineer, and the Sisyphus of tinkering. For work I specialize in monitoring and observability. I am very passionate about SRE tenents, open source software, Linux, music, automation, and breaking stuff until it works.
+i am a father, Site Reliability Engineer, and the Sisyphus of tinkering. For work i specialize in monitoring and observability. i am very passionate about SRE tenents, open source software, Linux, music, automation, and breaking stuff until it works.
 
 ## what?
 
-This is a blog to help me document any problems, solutions, software, hardware, albums, bands, and discoveries I may find in my internet travels. Some of the things I may write about are:
+this is a blog to help me document any problems, solutions, software, hardware, albums, bands, and discoveries i may find in my internet travels. some of the things i may write about are:
 
 - Linux
 - Kubernetes
@@ -26,8 +24,8 @@ This is a blog to help me document any problems, solutions, software, hardware, 
 
 ## why?
 
-The pursuit of knowledge, the sake of documenting, and the hope that even just one person finds value information or entertainment from my writings (even if that person is me in a month).
+the pursuit of knowledge, the sake of documenting, and the hope that even just one person finds value information or entertainment from my writings (even if that person is me in a month).
 
 ## how?
 
-This blog is brought to you by a combination of Hugo, Nginx, NixOS, and Akamai Connected Cloud (formerly Linode). You can read about how I set up my blog as a Nix Flake [here](link).
+this blog is brought to you by a combination of Hugo, Nginx, NixOS, and Akamai Connected Cloud (formerly Linode). You can read about how i set up my blog as a Nix Flake [here](link).

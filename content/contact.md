@@ -1,10 +1,8 @@
-+++
-title = "Contact"
-description = "Where to find me"
-date = "2020-01-07"
-aliases = ["contact"]
-author = "Curtis John"
-+++
+---
+title: "contact"
+description: "where to find me"
+aliases: ["contact"]
+---
 
 ### if you need to get a hold of me:
 
