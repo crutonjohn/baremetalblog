@@ -26,7 +26,7 @@
             src = pkgs.fetchFromGitHub {
               owner = "crutonjohn";
               repo = "baremetalblog";
-              rev = "63044a9126320e816823c87e256487abcfa06708";
+              rev = "f37d5da4a04181a9721f9179ec3bdd762c86a308";
               sha256 = "sha256-0S9lY0CXADtaGv8uyXEHRJicggCUxS3yo99IP3XqULY=";
               fetchSubmodules = true;
             };
