@@ -16,6 +16,8 @@ tags:
   - nvmeof
 ---
 
+> UPDATE: The bug has been addressed and fixed [upstream](https://github.com/democratic-csi/democratic-csi/issues/370)
+
 A recent upgrade I made to jump from [TrueNAS SCALE](https://www.truenas.com/truenas-scale/) version 22 "Bluefin" to version 23 "Cobia" wound up breaking my [NVMEoF](https://nvmexpress.org/specification/nvme-of-specification/) storage. I use [Democratic CSI](https://github.com/democratic-csi/democratic-csi) in my Kubernetes cluster to orchestrate creating NVMEoF volumes and attaching them to pods for PVCs. Democratic CSI can create a block volume in TrueNAS, add that volume to the running NVMEoF config, and ultimately do all the wiring within your cluster.
 
 Democratic CSI distributes a [bash script](https://github.com/democratic-csi/democratic-csi/blob/10af6c639b430af106be3ea769fcaddec1e5e9d3/contrib/scale-nvmet-start.sh) mean to run on your TrueNAS server which gets executed after the system boots. The script sets up NVMEoF and imports a config file containing your volumes. This script relies on Python to set up the NVMEoF client library. As a part of the changes introduced in TrueNAS 23.10 (I didn't read the patch notes) something changed with the underlying system's Python installation. This caused the script provided by Democratic CSI to stop workin altogether.
@@ -134,4 +136,4 @@ main
 
 The most up-to-date script can be found in [this github gist](https://gist.github.com/crutonjohn/9fa0bb368149cff189fa2ae89021a9e8) which I will try to keep up-to-date.
 
-I am also working with Democratic CSI to get it upstreamed in order to resolve this for other people more easily.
+~~I am also working with Democratic CSI to get it upstreamed in order to resolve this for other people more easily.~~
