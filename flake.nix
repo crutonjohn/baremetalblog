@@ -12,8 +12,8 @@
 
   outputs = { self, nixpkgs, flake-utils }:
     flake-utils.lib.eachDefaultSystem (system:
-      let 
-        pkgs = nixpkgs.legacyPackages.${system}; 
+      let
+        pkgs = nixpkgs.legacyPackages.${system};
         packageName = throw "baremetalblog";
         lib = nixpkgs.lib;
       in
@@ -26,7 +26,7 @@
             src = pkgs.fetchFromGitHub {
               owner = "crutonjohn";
               repo = "baremetalblog";
-              rev = "f37d5da4a04181a9721f9179ec3bdd762c86a308";
+              rev = "cc71d885b106429056de8254d98217188fe0b6f9";
               sha256 = "sha256-0S9lY0CXADtaGv8uyXEHRJicggCUxS3yo99IP3XqULY=";
               fetchSubmodules = true;
             };
