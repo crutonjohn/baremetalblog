@@ -4,6 +4,10 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs";
     flake-utils.url = "github:numtide/flake-utils";
+    # submodule = {
+    #   type = "git";
+    #   url = "file://submodule";
+    # };
   };
 
   outputs = { self, nixpkgs, flake-utils }:
@@ -15,8 +19,26 @@
       in
       {
         packages = rec {
-          baremetalblog = pkgs.callPackage ./nix/pkgs/baremetalblog { };
           default = baremetalblog;
+          # baremetalblog = pkgs.callPackage ./nix/pkgs/baremetalblog { };
+          baremetalblog = pkgs.stdenv.mkDerivation {
+            name = "baremetalblog";
+            src = pkgs.fetchFromGitHub {
+              owner = "crutonjohn";
+              repo = "baremetalblog";
+              rev = "63044a9126320e816823c87e256487abcfa06708";
+              sha256 = "sha256-0S9lY0CXADtaGv8uyXEHRJicggCUxS3yo99IP3XqULY=";
+              fetchSubmodules = true;
+            };
+            buildPhase = ''
+              ls -al themes/hello-friend
+
+              mkdir -p $out
+
+              ${pkgs.hugo}/bin/hugo --minify --noBuildLock -t hello-friend -d $out/
+
+            '';
+          };
         };
 
         nixosModules = rec {
