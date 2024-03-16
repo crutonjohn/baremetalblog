@@ -38,7 +38,6 @@ I have no collected evidence to substantiate this but I had a sneaking suspicion
 Now let's get into the "guide" part of this post, shall we?
 
 
-
 ## Guide
 
 ### Pre-Requisites
@@ -110,9 +109,10 @@ Make sure you have `helm` installed. You can check out how to do that for you ma
 
 Now add the Cilium helm repo:
 
-bash```
+```
 helm repo add cilium https://helm.cilium.io/
 ```
+
 If you haven't previously installed Cilium, I'd encourage you to stop here and get some experience with that first. There are a lot of options in the Helm chart and the options are too exhaustive to detail here. The values that we are focused on are the BGP Control Plane ones. More specifically:
 
 ```yaml
@@ -121,7 +121,7 @@ bgpControlPlane:
 ```
 Once you have that set, it should be as simple as:
 
-```bash
+```
 helm upgrade cilium cilium/cilium -f your_values.yaml
 ```
 For the sake of completeness here is my values file in its entirety. You can ignore most of the `clustermesh` related settings (maybe I'll cover that in a different post?)
@@ -130,17 +130,17 @@ For the sake of completeness here is my values file in its entirety. You can ign
 cluster:
     id: 1
     name: production
-k8sServiceHost: 192.168.130.154
-k8sServicePort: 6443
+k8sServiceHost: 192.168.130.154 # this should be your k8s api server
+k8sServicePort: 6443 # this should be your k8s api server port
 kubeProxyReplacement: strict
 l7Proxy: false
 l2announcements:
     enabled: true
 loadBalancer:
     algorithm: maglev
-devices: enp1s0
+devices: enp1s0 # this should be the name of the network device that your k8s node(s) are using. yes, it has to be the same on all nodes.
 bgpControlPlane:
-    enabled: true
+    enabled: true # this is required for the BGP exercise to work!!
 externalIPs:
     enabled: true
 bpf:
@@ -265,7 +265,50 @@ spec:
 
 ##### CiliumBGPPeeringPolicy
 
-This is the bulk of the configuration for Cilium's BGP settings. The way that my example is written it will apply this policy to nodes with the label `io.cilium/bgp=worker`. Furthermore it will only allow LoadBalancer definitions with the label `io.cilium/bgp-announce=worker`. Of course these can be changed to fit your deployment scenario. You could also outright remove the `nodeSelector` and `serviceSelector` sections to allow Cilium to control every LoadBalancer in your cluster.
+This is the bulk of the configuration for Cilium's BGP settings. The way that my example is written it will apply this policy to nodes with the label `io.cilium/bgp=worker`. Furthermore it will only allow LoadBalancer definitions with the label `io.cilium/bgp-announce=worker`. Of course these can be changed to fit your deployment scenario. ~~You could also outright remove the `nodeSelector` and `serviceSelector` sections to allow Cilium to control every LoadBalancer in your cluster.~~
+
+> Correction as per [JJGadgets](https://jjgadgets.tech/):
+> While `nodeSelector` is not required, `serviceSelector` _is_. His suggestion is to use `NotIn` [as seen in his repo](https://github.com/JJGadgets/Biohazard/blob/3f9086de48e136053ad1ac1043db403c554707ac/kube/deploy/core/_networking/cilium/loadbalancer/BGP.yaml#L17-L19) in the event that you want to select all `LoadBalancer` services.
+> As always, you can run `kubectl explain` to help you figure out what different fields are for in a given Kubernetes resource.
+
+```
+❯  kubectl explain ciliumbgppeeringpolicy.spec.virtualRouters
+GROUP:      cilium.io
+KIND:       CiliumBGPPeeringPolicy
+VERSION:    v2alpha1
+
+FIELD: virtualRouters <[]Object>
+
+DESCRIPTION:
+    A list of CiliumBGPVirtualRouter(s) which instructs the BGP control plane
+    how to instantiate virtual BGP routers.
+    CiliumBGPVirtualRouter defines a discrete BGP virtual router configuration.
+
+FIELDS:
+  exportPodCIDR	<boolean>
+    ExportPodCIDR determines whether to export the Node's private CIDR block to
+    the configured neighbors.
+
+  localASN	<integer> -required-
+    LocalASN is the ASN of this virtual router. Supports extended 32bit ASNs
+
+  neighbors	<[]Object> -required-
+    Neighbors is a list of neighboring BGP peers for this virtual router
+
+  podIPPoolSelector	<Object>
+    PodIPPoolSelector selects CiliumPodIPPools based on labels. The virtual
+    router will announce allocated CIDRs of matching CiliumPodIPPools.
+     If empty / nil no CiliumPodIPPools will be announced.
+
+  serviceSelector	<Object>
+    ServiceSelector selects a group of load balancer services which this virtual
+    router will announce. The loadBalancerClass for a service must be nil or
+    specify a class supported by Cilium, e.g. "io.cilium/bgp-control-plane".
+    Refer to the following document for additional details regarding load
+    balancer classes:
+     https://kubernetes.io/docs/concepts/services-networking/service/#load-balancer-class
+     If empty / nil no services will be announced.
+```
 
 ```yaml
 ---
@@ -278,12 +321,12 @@ spec:
     matchLabels: # Delete this line to apply this policy to all cluster members
       io.cilium/bgp: worker # Delete this line to apply this policy to all cluster members
   virtualRouters:
-    - localASN: 64513 # Use your ASN here!
+    - localASN: 64513 # Use your cluster's ASN here!
       serviceSelector: # Delete this line to allow all LoadBalancers
         matchExpressions: # Delete this line to allow all LoadBalancers
-          - {key: "io.cilium/bgp-announce", operator: In, values: ['worker']} # Delete this line to allow all LoadBalancers
+          - {key: "io.cilium/bgp-announce", operator: NotIn, values: ['fakevalue']} # This will allow all `LoadBalancers`
       neighbors:
-        - peerAddress: '192.168.130.1/32' # This should be the IP of your Opnsense Router
+        - peerAddress: '192.168.130.1/32' # This should be the IP of your Opnsense Router, the /32 should be included as CIDR notation is required.
           peerASN: 64512 # Set this to the ASN delegated to your Opnsense Router
           eBGPMultihopTTL: 10
           connectRetryTimeSeconds: 120
@@ -363,4 +406,5 @@ I may never know the reason why this worked and fixed all of my lag problems, bu
   - https://dickingwithdocker.com/posts/using-bgp-to-integrate-cilium-with-opnsense/
   - https://dickingwithdocker.com/posts/update-using-bgp-to-integrate-cilium-with-opnsense/
 - Tyzbit's [guide on BGP with Calico](https://tyzbit.blog/configuring-bgp-with-calico-on-k8s-and-opnsense) that helped me mind-map some concepts out
+- [JJGadgets's](https://jjgadgets.tech/) corrections! Thank you for pointing out my dumb mistakes.
 
