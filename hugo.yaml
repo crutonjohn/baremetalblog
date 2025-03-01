@@ -1,0 +1,68 @@
+baseURL: https://baremetalblog.com
+title: Bare Metal Blog
+author: Curtis John
+languageCode: en
+DefaultContentLanguage: en
+enableInlineShortcodes: true
+theme: hello-friend
+enableRobotsTXT: true
+enableEmoji: true
+timeout: 30000
+params:
+  paginator_pages: "5"
+  archive_dropdown: "true"
+  darkmode: dark
+languages:
+  en:
+    params:
+      title: baremetalblog
+      subtitle: ""
+      keywords: ""
+      copyright: ""
+      menuMore: show more
+      writtenBy: written by
+      readMore: read more
+      readOtherPosts: read other posts
+      newerPosts: newer posts
+      olderPosts: older posts
+      minuteReadingTime: min read
+      dateFormatSingle: 01-02-2006
+      dateFormatList: 01-02-2006
+      logo:
+        logoText: baremetalblog
+        logoHomeLink: /
+    menu:
+      main:
+        - identifier: about
+          name: about
+          url: /about
+        - identifier: contact
+          name: contact
+          url: /contact
+taxonomies:
+  category: categories
+  tag: tags
+  archive: archives
+privacy:
+  vimeo:
+    disabled: false
+    simple: true
+  twitter:
+    disabled: false
+    enableDNT: true
+    simple: true
+  instagram:
+    disabled: true
+    simple: true
+  youtube:
+    disabled: false
+    privacyEnhanced: true
+config:
+  services:
+    googleAnalytics:
+      ID: G-GMJQDE9153
+services:
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true
