@@ -4,7 +4,7 @@ description: ""
 aliases: ["about-us", "about-me", "contact"]
 ---
 
-i am a father, Site Reliability Engineer, and the Sisyphus of tinkering. For work i specialize in monitoring and observability. i am very passionate about SRE tenents, open source software, Linux, music, automation, and breaking stuff until it works.
+i am a father, Site Reliability Engineer, and the Sisyphus of tinkering. for work i specialize in monitoring and observability. i am very passionate about SRE tenents, open source software, Linux, music, automation, and breaking stuff until it works.
 
 ## what?
 
